@@ -1,0 +1,171 @@
+#VRML V2.0 utf8
+
+#1 tang tu
+Transform
+{
+	children
+	[
+		Transform
+		{
+			children Inline
+			{
+				url	"./OTuTrai.wrl"
+			}
+		}
+		Transform
+		{
+			translation	0.66 0 0
+			children Inline
+			{
+				url	"./OTuPhai.wrl"
+			}
+		}
+	]
+}
+
+Transform
+{
+	translation	 0 0.55 0
+	children
+	[
+		Transform
+		{
+			children Inline
+			{
+				url	"./OTuTrai.wrl"
+			}
+		}
+		Transform
+		{
+			translation	0.66 0 0
+			children Inline
+			{
+				url	"./OTuPhai.wrl"
+			}
+		}
+	]
+}
+Transform
+{
+	translation	 0 1.1 0
+	children
+	[
+		Transform
+		{
+			children Inline
+			{
+				url	"./OTuTrai.wrl"
+			}
+		}
+		Transform
+		{
+			translation	0.66 0 0
+			children Inline
+			{
+				url	"./OTuPhai.wrl"
+			}
+		}
+	]
+}
+Transform
+{
+	translation	 0 1.65 0
+	children
+	[
+		Transform
+		{
+			children Inline
+			{
+				url	"./OTuTrai.wrl"
+			}
+		}
+		Transform
+		{
+			translation	0.66 0 0
+			children Inline
+			{
+				url	"./OTuPhai.wrl"
+			}
+		}
+	]
+}
+
+#thanh gia do cho tu
+
+#thanh doc
+Transform
+{
+	translation	0.33 0.825 0
+	children Shape
+	{
+		geometry Box{size 0.01 2.18 0.5}
+		appearance Appearance
+				{
+					material Material
+					{
+						ambientIntensity 0
+						shininess 0
+					}
+				}
+	}
+}
+
+#thanh ngang
+Transform
+{
+	translation	0.33 0.28 -0.008
+	children Shape
+	{
+		geometry Box
+		{
+			size 1.31 0.02 0.515
+		}
+		appearance Appearance
+				{
+					material Material
+					{
+						ambientIntensity 0
+						shininess 0
+					}
+				}
+	}
+}
+
+Transform
+{
+	translation	0.33 0.83 -0.008
+	children Shape
+	{
+		geometry Box
+		{
+			size 1.31 0.02 0.515
+		}
+		appearance Appearance
+				{
+					material Material
+					{
+						ambientIntensity 0
+						shininess 0
+					}
+				}
+	}
+}
+Transform
+{
+	translation	0.33 1.38 -0.008
+	children Shape
+	{
+		geometry Box
+		{
+			size 1.31 0.02 0.515
+		}
+		appearance Appearance
+				{
+					material Material
+					{
+						ambientIntensity 0
+						shininess 0
+					}
+				}
+	}
+}

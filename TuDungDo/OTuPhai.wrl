@@ -1,0 +1,146 @@
+#VRML V2.0 utf8
+
+#VRML V2.0 utf8
+
+#Phan Than TU
+Transform
+{
+	children
+	[
+		#Mat ben trai tu
+		Transform
+		{
+			translation -0.31 0 0
+			children Shape
+			{
+				geometry Box {size 0.03 0.5 0.5}
+				appearance Appearance
+				{
+					material Material
+					{
+						ambientIntensity 0
+						shininess 0
+					}
+				}
+			}
+		}
+		#Mat ben phai
+		Transform
+		{
+			translation 0.31 0 0
+			children Shape
+			{
+				geometry Box {size 0.03 0.5 0.5}
+				appearance Appearance
+				{
+					material Material
+					{
+						ambientIntensity 0
+						shininess 0
+					}
+				}
+			}
+		}
+
+		#Mat sau tu
+		Transform
+		{
+			translation	0 0.25 0
+			children Shape
+			{
+				geometry Box {size 0.65 0.03 0.5}
+				appearance Appearance
+				{
+					material Material
+					{
+						ambientIntensity 0
+						shininess 0
+					}
+				}
+			}
+		}
+
+		#Mat duoi tu
+		Transform
+		{
+			translation	0 -0.25 0
+			children Shape
+			{
+				geometry Box {size 0.65 0.03 0.5}
+				appearance Appearance
+				{
+					material Material
+					{
+						ambientIntensity 0
+						shininess 0
+					}
+				}
+			}
+		}
+
+		#mat sau tu
+		Transform
+		{
+			translation	0 0 -0.25
+			children Shape
+			{
+				geometry Box {size 0.65 0.53 0.03}
+				appearance Appearance
+				{
+					material Material
+					{
+						ambientIntensity 0
+						shininess 0
+					}
+				}
+			}
+		}
+	]
+}
+
+#Canh Cua Tu
+DEF	CanhCuaTu Transform
+{
+	center 0.3 0 0
+	translation	0 0 0.24
+	children
+	[
+		#canh cua
+		Transform
+		{
+			children Shape
+			{
+				geometry Box {size 0.63 0.47 0.01}
+				appearance Appearance
+				{
+					material Material
+					{
+						ambientIntensity 0
+						shininess 0
+					}
+				}
+			}
+		}
+
+		#Nam cua tu
+		Transform
+		{
+			rotation  1 0 0 1.57
+			translation	-0.2 0 0.01
+			children Shape
+			{
+				geometry Cylinder
+				{
+					height 0.02
+					radius 0.02
+				}
+			}
+		}
+		DEF	 CamBien CylinderSensor
+		{
+			minAngle 0
+			maxAngle 1.57
+		}
+	]
+}
+ROUTE CamBien.rotation_changed  TO CanhCuaTu.rotation
