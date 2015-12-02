@@ -1,0 +1,151 @@
+#VRML V2.0 utf8
+
+Transform {
+	translation	0 0 0
+	children [	 
+		Transform {
+			translation 0 0.1 0 
+			rotation 1 0 0 3.2
+			children [
+				DEF	ql TouchSensor {}
+				Shape {
+					geometry Cone {
+						bottom TRUE
+						side TRUE
+						bottomRadius 0.09
+						height 0.09
+					}
+					appearance Appearance {
+						material Material {
+							diffuseColor .12 .59 .16
+							specularColor .21 .3 .78
+							emissiveColor .03 .13 .04
+							ambientIntensity .02
+						}
+						
+					}
+				}
+			]
+			
+		}
+		#dong co
+		#begin
+		Transform {
+			translation	0 0 0
+			children [
+				Shape {
+					geometry Cylinder {
+						side TRUE
+						top	TRUE
+						bottom TRUE
+						height 0.2
+						radius 0.03
+					}
+					appearance Appearance {
+						material Material {
+							diffuseColor .12 .59 .16
+							specularColor .21 .3 .78
+							emissiveColor .03 .13 .04
+							ambientIntensity .02
+						}
+						
+					}
+				}
+			]
+		}
+		#dong co
+		#end
+		DEF	trucquay Transform {
+			translation	0 -0.11 0
+			children [
+				Transform {
+					translation	0 0.01 0
+					children [
+						Shape {
+							geometry Cylinder {
+								   bottom TRUE
+								   radius 0.16
+								   height 0.05
+								   side	TRUE
+								   top TRUE
+							}
+							appearance Appearance {
+								material Material {
+							diffuseColor .12 .59 .16
+							specularColor .21 .3 .78
+							emissiveColor .03 .13 .04
+							ambientIntensity .02
+						}
+						
+						}
+						}
+					]
+				}
+				#canh quat
+		#begin
+
+		Transform {
+			translation	0 0 0
+			children [
+				Shape {
+					geometry Box {
+						size 1.2 0.01 0.2
+					}
+					appearance Appearance {
+						material Material {
+							diffuseColor .12 .59 .16
+							specularColor .21 .3 .78
+							emissiveColor .03 .13 .04
+							ambientIntensity .02
+						}
+						
+					}
+				}
+				
+			]
+		}
+		#canh quat
+		#end
+		#canh quat
+		#begin
+
+		Transform {
+			rotation 0 1 0 1.55
+			translation	0 0 0
+			children [
+				Shape {
+					geometry Box {
+						size 1.2 0.01 0.2
+					}
+					appearance Appearance {
+						material Material {
+							diffuseColor .12 .59 .16
+							specularColor .21 .3 .78
+							emissiveColor .03 .13 .04
+							ambientIntensity .02
+						}
+						
+					}
+				}
+				
+			]
+		}
+		#canh quat
+		#end
+			]
+		}
+	]
+}
+DEF	timesloop TimeSensor {
+	cycleInterval 0.1
+	loop TRUE
+	startTime -1
+	stopTime 0
+}
+DEF	quay OrientationInterpolator{
+	key	[0.1, 0.5, 0.8, 1]										
+	keyValue [0 1 0 1, 0 1 0 1.5, 0 1 0 1.8, 0 1 0 2.5]
+}
+ROUTE ql.touchTime	TO timesloop.startTime
+ROUTE timesloop.fraction_changed TO	quay.set_fraction
+ROUTE quay.value_changed TO trucquay.rotation

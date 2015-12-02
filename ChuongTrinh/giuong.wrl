@@ -1,0 +1,1092 @@
+#VRML V2.0 utf8
+
+Transform {
+	#Tam trai giuong 1 begin
+	translation	0 0 0
+	children [
+		Shape {
+			geometry Box {
+				size 1.8 0.05 0.05
+			}
+		}
+		Transform {
+			translation	0.875 0 -0.44
+			children [
+				Shape {
+					geometry Box {
+						size 0.05 0.05 0.9
+					}
+					appearance Appearance {
+						material Material {
+							ambientIntensity 0
+						}
+						
+					}
+				}
+			]
+		}
+		Transform {
+			translation	-0.875 0 -0.44
+			children [
+				Shape {
+					geometry Box {
+						size 0.05 0.05 0.9
+					}
+					appearance Appearance {
+						material Material {
+							ambientIntensity 0
+						}
+						
+					}
+				}
+			]
+		}
+		Transform {
+			translation	0 0 -0.9
+			children [
+				Shape {
+					geometry Box {
+						size 1.8 0.05 0.05
+					}
+				}
+			]
+		}
+		#end tam trai giuong 1
+		#song chan giuong begin
+		Transform {
+			translation	0 0 -0.44
+			children [
+				Shape {
+					geometry Box {
+						size 0.05 0.05 0.9
+					}
+					appearance Appearance {
+						material Material {
+							ambientIntensity 0
+						}
+						
+					}
+				}
+			]
+		} 
+
+		Transform {
+			translation	-0.4 0 -0.44
+			children [
+				Shape {
+					geometry Box {
+						size 0.05 0.05 0.9
+					}
+					appearance Appearance {
+						material Material {
+							ambientIntensity 0
+						}
+						
+					}
+				}
+			]
+		} 
+		Transform {
+			translation	0.4 0 -0.44
+			children [
+				Shape {
+					geometry Box {
+						size 0.05 0.05 0.9
+					}
+					appearance Appearance {
+						material Material {
+							ambientIntensity 0
+						}
+						
+					}
+				}
+			]
+		} 
+		#song chan giuong end
+		
+		#chan giuong  begin
+		Transform {
+			translation	-0.9 0.5 0
+			children [
+				Shape {
+					geometry Box {
+						size 0.05 2 0.05
+					}
+					appearance Appearance {
+						material Material {
+							diffuseColor .37 .37 .37
+							specularColor .89 .89 .89
+							ambientIntensity .1
+							shininess .13
+						}
+						
+					}
+				}
+				Transform {
+					translation 0 -1 0
+					children [
+						  	Shape {
+								geometry Box {
+								size 0.06 0.06 0.06
+							}
+							appearance Appearance {
+								material Material {
+								diffuseColor 0 0 0
+							}
+						}
+					}
+					]
+				}	
+			]
+		}
+
+		Transform {
+			translation	-0.9 0.5 -0.9
+			children [
+				Shape {
+					geometry Box {
+						size 0.05 2 0.05
+					}
+					appearance Appearance {
+						material Material {
+							diffuseColor .37 .37 .37
+							specularColor .89 .89 .89
+							ambientIntensity .1
+							shininess .13
+						}
+						
+					}
+				}
+				Transform {
+					translation 0 -1 0
+					children [
+						  	Shape {
+								geometry Box {
+								size 0.06 0.06 0.06
+							}
+							appearance Appearance {
+								material Material {
+								diffuseColor 0 0 0
+							}
+						}
+					}
+					]
+				}
+			]
+		}
+
+		Transform {
+			translation	0.9 0.5 -0.9
+			children [
+				Shape {
+					geometry Box {
+						size 0.05 2 0.05
+					}
+					appearance Appearance {
+						material Material {
+							diffuseColor .37 .37 .37
+							specularColor .89 .89 .89
+							ambientIntensity .1
+							shininess .13
+						}
+						
+					}
+				}
+				Transform {
+					translation 0 -1 0
+					children [
+						  	Shape {
+								geometry Box {
+								size 0.06 0.06 0.06
+							}
+							appearance Appearance {
+								material Material {
+								diffuseColor 0 0 0
+							}
+						}
+					}
+					]
+				}
+			]
+		}
+
+		Transform {
+			translation	0.9 0.5 0
+			children [
+				Shape {
+					geometry Box {
+						size 0.05 2 0.05
+					}
+					appearance Appearance {
+						material Material {
+							diffuseColor .37 .37 .37
+							specularColor .89 .89 .89
+							ambientIntensity .1
+							shininess .13
+						}
+						
+					}
+				}
+				Transform {
+					translation 0 -1 0
+					children [
+						  	Shape {
+								geometry Box {
+								size 0.06 0.06 0.06
+							}
+							appearance Appearance {
+								material Material {
+								diffuseColor 0 0 0
+							}
+						}
+					}
+					]
+				}
+			]
+		}
+		#chan giuong   end
+		
+		#Song chan cuoi giuong tang 1
+		#Begin
+		Transform {
+			translation	-0.9 0.2 -0.44
+			children [
+				Shape {
+					geometry Box {
+						size 0.05 0.05 0.9
+					}
+					appearance Appearance {
+						material Material {
+							diffuseColor .35 .38 .32
+							specularColor .8 1 .83
+							ambientIntensity 0
+							shininess .12
+						}
+						
+					}
+				}
+			]
+		}
+
+		Transform {
+			translation	-0.9 0.1 -0.24
+			children [
+				Shape {
+					geometry Box {
+						size 0.05 0.2 0.05
+					}
+					appearance Appearance {
+						material Material {
+							diffuseColor .4 .4 .4
+							specularColor .77 .77 .77
+							ambientIntensity .25
+							shininess .6
+						}	  
+					}
+				}
+			]
+		}
+
+		Transform {
+			translation	-0.9 0.1 -0.64
+			children [
+				Shape {
+					geometry Box {
+						size 0.05 0.2 0.05
+					}
+					appearance Appearance {
+						material Material {
+							diffuseColor .4 .4 .4
+							specularColor .77 .77 .77
+							ambientIntensity .25
+							shininess .6
+						}	  
+					}
+				}
+			]
+		}
+		#Song chan cuoi giuong tang 1
+		#End
+		
+		#Ban hoc tang 1
+		#begin
+		Transform {
+			translation	0.9 0.3 -0.44
+			children [
+				Shape {
+					geometry Box {
+						size 0.05 0.05 0.9
+					}
+					appearance Appearance {
+						material Material {
+							diffuseColor .35 .38 .32
+							specularColor .8 1 .83
+							ambientIntensity 0
+							shininess .12
+						}
+						
+					}
+				}
+				Transform {
+					translation	-0.2 0 0
+					children [
+						Shape {
+							geometry Box{
+								size 0.4 0.02 0.85
+							}
+							appearance Appearance {
+								material Material {
+									diffuseColor .44 .1 0
+									specularColor 1 .68 .51
+									emissiveColor .15 .13 .06
+									ambientIntensity .0833
+									shininess .07
+								}
+								
+							}
+						}
+					]
+				}
+				Transform {
+					translation	-0.16 -0.02 0.42
+					children [
+						Shape {
+							geometry Box {
+								size  0.3 0.02 0.05
+							}
+							appearance Appearance {
+								material Material {
+									diffuseColor .38 .35 .35
+									specularColor .76 .74 .59
+									ambientIntensity .0933
+									shininess .07
+								}
+								
+							}
+						}
+					]
+				}
+				Transform {
+					translation	-0.16 -0.02 -0.42
+					children [
+						Shape {
+							geometry Box {
+								size  0.3 0.02 0.05
+							}
+							appearance Appearance {
+								material Material {
+									diffuseColor .38 .35 .35
+									specularColor .76 .74 .59
+									ambientIntensity .0933
+									shininess .07
+								}
+								
+							}
+						}
+					]
+				}
+				Transform {
+					translation	0 -0.15 -0.42
+					children [
+						Shape {
+							geometry Cylinder {
+								bottom TRUE
+								height 0.25
+								radius 0.02
+								side TRUE
+								top	TRUE
+						}
+						appearance Appearance {
+							material Material {
+								diffuseColor .38 .35 .35
+								specularColor .76 .74 .59
+								ambientIntensity .0933
+								shininess .07
+							}
+							
+						}
+						}
+					]
+				}
+				Transform {
+					translation	0 -0.15 0.4
+					children [
+						Shape {
+							geometry Cylinder {
+								bottom TRUE
+								height 0.25
+								radius 0.02
+								side TRUE
+								top	TRUE
+						}
+						appearance Appearance {
+							material Material {
+								diffuseColor .38 .35 .35
+								specularColor .76 .74 .59
+								ambientIntensity .0933
+								shininess .07
+							}
+							
+						}
+						}
+					]
+				}
+
+				#gia do ban	1
+				#begin
+				Transform {
+					rotation 0 0 1 1
+					translation	-0.15 -0.095 0.41
+					children [
+						Shape {
+							geometry Cylinder {
+								bottom TRUE
+								height 0.3
+								radius 0.02
+								side TRUE
+								top	TRUE
+							}
+							appearance Appearance {
+								material Material {
+									diffuseColor .38 .35 .35
+									specularColor .76 .74 .59
+									ambientIntensity .0933
+									shininess .07
+								}
+								
+							}
+						}
+					]
+				}
+				#end
+				#gia do ban 2
+				#begin
+				 Transform {
+					rotation 0 0 1 1
+					translation	-0.15 -0.095 -0.41
+					children [
+						Shape {
+							geometry Cylinder {
+								bottom TRUE
+								height 0.3
+								radius 0.02
+								side TRUE
+								top	TRUE
+							}
+							appearance Appearance {
+								material Material {
+									diffuseColor .38 .35 .35
+									specularColor .76 .74 .59
+									ambientIntensity .0933
+									shininess .07
+								}
+								
+							}
+						}
+					]
+				}
+				#end
+			]
+		}
+		#Ban hoc tang 1
+		#end
+
+		#Tang 2 giuong begin
+		Transform {
+			translation	0 1.2 0
+			children [
+				
+		Shape {
+			geometry Box {
+				size 1.8 0.05 0.05
+			}
+		}
+		Transform {
+			translation	0.875 0 -0.44
+			children [
+				Shape {
+					geometry Box {
+						size 0.05 0.05 0.9
+					}
+					appearance Appearance {
+						material Material {
+							ambientIntensity 0
+						}
+						
+					}
+				}
+			]
+		}
+		Transform {
+			translation	-0.875 0 -0.44
+			children [
+				Shape {
+					geometry Box {
+						size 0.05 0.05 0.9
+					}
+					appearance Appearance {
+						material Material {
+							ambientIntensity 0
+						}
+						
+					}
+				}
+			]
+		}
+		Transform {
+			translation	0 0 -0.9
+			children [
+				Shape {
+					geometry Box {
+						size 1.8 0.05 0.05
+					}
+				}
+			]
+		}
+		#end tam trai giuong 2
+		#song chan giuong begin
+		Transform {
+			translation	0 0 -0.44
+			children [
+				Shape {
+					geometry Box {
+						size 0.05 0.05 0.9
+					}
+					appearance Appearance {
+						material Material {
+							ambientIntensity 0
+						}
+						
+					}
+				}
+			]
+		} 
+
+		Transform {
+			translation	-0.4 0 -0.44
+			children [
+				Shape {
+					geometry Box {
+						size 0.05 0.05 0.9
+					}
+					appearance Appearance {
+						material Material {
+							ambientIntensity 0
+						}
+						
+					}
+				}
+			]
+		} 
+		Transform {
+			translation	0.4 0 -0.44
+			children [
+				Shape {
+					geometry Box {
+						size 0.05 0.05 0.9
+					}
+					appearance Appearance {
+						material Material {
+							ambientIntensity 0
+						}
+						
+					}
+				}
+			
+			]
+		}
+			]
+		}
+		#Tang 2 giuong end
+		#Song chan cuoi giuong tang 2
+		#Begin
+		Transform {
+			translation	0.9 1.47 -0.44
+			children [
+				Shape {
+					geometry Box {
+						size 0.05 0.05 0.9
+					}
+					appearance Appearance {
+						material Material {
+							diffuseColor .35 .38 .32
+							specularColor .8 1 .83
+							ambientIntensity 0
+							shininess .12
+						}
+						
+					}
+				}
+			]
+		}
+
+		Transform {
+			translation	0.9 1.33 -0.24
+			children [
+				Shape {
+					geometry Box {
+						size 0.05 0.25 0.05
+					}
+					appearance Appearance {
+						material Material {
+							diffuseColor .4 .4 .4
+							specularColor .77 .77 .77
+							ambientIntensity .25
+							shininess .6
+						}	  
+					}
+				}
+			]
+		}
+
+		Transform {
+			translation	0.9 1.33 -0.64
+			children [
+				Shape {
+					geometry Box {
+						size 0.05 0.25 0.05
+					}
+					appearance Appearance {
+						material Material {
+							diffuseColor .4 .4 .4
+							specularColor .77 .77 .77
+							ambientIntensity .25
+							shininess .6
+						}	  
+					}
+				}
+			]
+		}
+		#Song chan cuoi giuong tang 2
+		#End
+
+		#Ban hoc tang 2
+		#begin
+		Transform {
+			rotation 0 1 0 3.14
+			translation	-0.9 1.5 -0.45
+			children [
+				Shape {
+					geometry Box {
+						size 0.05 0.05 0.95
+					}
+					appearance Appearance {
+						material Material {
+							diffuseColor .35 .38 .32
+							specularColor .8 1 .83
+							ambientIntensity 0
+							shininess .12
+						}
+						
+					}
+				}
+				Transform {
+					translation	-0.2 0 0
+					children [
+						Shape {
+							geometry Box{
+								size 0.4 0.02 0.85
+							}
+							appearance Appearance {
+								material Material {
+									diffuseColor .44 .1 0
+									specularColor 1 .68 .51
+									emissiveColor .15 .13 .06
+									ambientIntensity .0833
+									shininess .07
+								}
+								
+							}
+						}
+					]
+				}
+				Transform {
+					translation	-0.16 -0.02 0.42
+					children [
+						Shape {
+							geometry Box {
+								size  0.3 0.02 0.05
+							}
+							appearance Appearance {
+								material Material {
+									diffuseColor .38 .35 .35
+									specularColor .76 .74 .59
+									ambientIntensity .0933
+									shininess .07
+								}
+								
+							}
+						}
+					]
+				}
+				Transform {
+					translation	-0.16 -0.02 -0.42
+					children [
+						Shape {
+							geometry Box {
+								size  0.3 0.02 0.05
+							}
+							appearance Appearance {
+								material Material {
+									diffuseColor .38 .35 .35
+									specularColor .76 .74 .59
+									ambientIntensity .0933
+									shininess .07
+								}
+								
+							}
+						}
+					]
+				}
+				Transform {
+					translation	0 -0.15 -0.42
+					children [
+						Shape {
+							geometry Cylinder {
+								bottom TRUE
+								height 0.25
+								radius 0.02
+								side TRUE
+								top	TRUE
+						}
+						appearance Appearance {
+							material Material {
+								diffuseColor .38 .35 .35
+								specularColor .76 .74 .59
+								ambientIntensity .0933
+								shininess .07
+							}
+							
+						}
+						}
+					]
+				}
+				Transform {
+					translation	0 -0.15 0.4
+					children [
+						Shape {
+							geometry Cylinder {
+								bottom TRUE
+								height 0.25
+								radius 0.02
+								side TRUE
+								top	TRUE
+						}
+						appearance Appearance {
+							material Material {
+								diffuseColor .38 .35 .35
+								specularColor .76 .74 .59
+								ambientIntensity .0933
+								shininess .07
+							}
+							
+						}
+						}
+					]
+				}
+
+				#gia do ban	1
+				#begin
+				Transform {
+					rotation 0 0 1 1
+					translation	-0.15 -0.095 0.41
+					children [
+						Shape {
+							geometry Cylinder {
+								bottom TRUE
+								height 0.3
+								radius 0.02
+								side TRUE
+								top	TRUE
+							}
+							appearance Appearance {
+								material Material {
+									diffuseColor .38 .35 .35
+									specularColor .76 .74 .59
+									ambientIntensity .0933
+									shininess .07
+								}
+								
+							}
+						}
+					]
+				}
+				#end
+				#gia do ban 2
+				#begin
+				 Transform {
+					rotation 0 0 1 1
+					translation	-0.15 -0.095 -0.41
+					children [
+						Shape {
+							geometry Cylinder {
+								bottom TRUE
+								height 0.3
+								radius 0.02
+								side TRUE
+								top	TRUE
+							}
+							appearance Appearance {
+								material Material {
+									diffuseColor .38 .35 .35
+									specularColor .76 .74 .59
+									ambientIntensity .0933
+									shininess .07
+								}
+								
+							}
+						}
+					]
+				}
+				#end
+			]
+		}
+		#Ban hoc tang 2
+		#end
+
+		#coc man 1
+		#begin
+		DEF cocman1 Transform {
+			translation	-0.9 1.8 0
+			children [
+				DEF	coc1 TouchSensor {	
+					enabled TRUE
+				}
+				Shape {
+					geometry Cylinder {
+						bottom TRUE
+						height 1
+						radius 0.01
+						side TRUE
+						top	TRUE
+					}
+					appearance Appearance {
+								material Material {
+									diffuseColor .38 .35 .35
+									specularColor .76 .74 .59
+									ambientIntensity .0933
+									shininess .07
+								}
+								
+							}
+				}
+				Transform {
+					translation	0 0.505 0
+					children [
+						Shape {
+							geometry Sphere {
+								radius 0.01
+							}		   
+							appearance Appearance {
+								material Material {
+									diffuseColor .38 .35 .35
+									specularColor .76 .74 .59
+									ambientIntensity .0933
+									shininess .07
+								} 
+							}
+						}
+					]
+				}
+			]
+		}
+		#coc man 1
+		#end
+
+		#coc man 2
+		#begin
+		DEF cocman2 Transform {
+			translation	0.9 1.8 0
+			children [
+				DEF	coc2 TouchSensor {	
+					enabled TRUE
+				}
+				Shape {
+					geometry Cylinder {
+						bottom TRUE
+						height 1
+						radius 0.01
+						side TRUE
+						top	TRUE
+					}
+					appearance Appearance {
+								material Material {
+									diffuseColor .38 .35 .35
+									specularColor .76 .74 .59
+									ambientIntensity .0933
+									shininess .07
+								}
+								
+							}
+				}
+				Transform {
+					translation	0 0.505 0
+					children [
+						Shape {
+							geometry Sphere {
+								radius 0.01
+							}		   
+							appearance Appearance {
+								material Material {
+									diffuseColor .38 .35 .35
+									specularColor .76 .74 .59
+									ambientIntensity .0933
+									shininess .07
+								} 
+							}
+						}
+					]
+				}
+			]
+		}
+		#coc man 2
+		#end
+
+		#coc man 3
+		#begin
+		DEF cocman3 Transform {
+			translation	-0.9 1.8 -0.9
+			children [
+				DEF	coc3 TouchSensor {	
+					enabled TRUE
+				}
+				Shape {
+					geometry Cylinder {
+						bottom TRUE
+						height 1
+						radius 0.01
+						side TRUE
+						top	TRUE
+					}
+					appearance Appearance {
+								material Material {
+									diffuseColor .38 .35 .35
+									specularColor .76 .74 .59
+									ambientIntensity .0933
+									shininess .07
+								}
+								
+							}
+				}
+				Transform {
+					translation	0 0.505 0
+					children [
+						Shape {
+							geometry Sphere {
+								radius 0.01
+							}		   
+							appearance Appearance {
+								material Material {
+									diffuseColor .38 .35 .35
+									specularColor .76 .74 .59
+									ambientIntensity .0933
+									shininess .07
+								} 
+							}
+						}
+					]
+				}
+			]
+		}
+		#coc man 3
+		#end
+
+		#coc man 4
+		#begin
+		DEF cocman4 Transform {
+			translation	0.9 1.8 -0.9
+			children [
+				DEF	coc4 TouchSensor {	
+					enabled TRUE
+				}
+				Shape {
+					geometry Cylinder {
+						bottom TRUE
+						height 1
+						radius 0.01
+						side TRUE
+						top	TRUE
+					}
+					appearance Appearance {
+								material Material {
+									diffuseColor .38 .35 .35
+									specularColor .76 .74 .59
+									ambientIntensity .0933
+									shininess .07
+								}
+								
+							}
+				}
+				Transform {
+					translation	0 0.505 0
+					children [
+						Shape {
+							geometry Sphere {
+								radius 0.01
+							}		   
+							appearance Appearance {
+								material Material {
+									diffuseColor .38 .35 .35
+									specularColor .76 .74 .59
+									ambientIntensity .0933
+									shininess .07
+								} 
+							}
+						}
+					]
+				}
+			]
+		}
+		#coc man 4
+		#end
+
+		#chieu giuong 1
+		#begin
+		Transform {
+			translation	0 0.03 -0.45
+			children [
+				Shape {
+					geometry Box {
+						size 1.77 0.01 0.88
+					}
+					appearance Appearance {
+						material Material {
+							diffuseColor .76 .71 .4
+							specularColor .38 .38 .27
+							emissiveColor .18 .17 .09
+							ambientIntensity .05
+							shininess .19
+						}
+						
+					}
+				}
+			]
+		}
+		#chieu giuong 1
+		#end
+		#chieu giuong 2
+		#begin
+		Transform {
+			translation	0 1.23 -0.45
+			children [
+				Shape {
+					geometry Box {
+						size 1.77 0.01 0.88
+					}
+					appearance Appearance {
+						material Material {
+							diffuseColor .76 .71 .4
+							specularColor .38 .38 .27
+							emissiveColor .18 .17 .09
+							ambientIntensity .05
+							shininess .19
+						}
+						
+					}
+				}
+			]
+		}
+		#chieu giuong 2
+		#end
+	]
+}								   
