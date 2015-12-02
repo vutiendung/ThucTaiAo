@@ -1,5 +1,7 @@
 #VRML V2.0 utf8
 
+#VRML V2.0 utf8
+
 #phong 8 nguoi
 
 #   ve tuong xung quanh
@@ -11,6 +13,7 @@ DEF TuongPhiaTruoc Transform
 	[
 		Transform
 		{
+			translation	3.3 0 0
 			children Shape
 			{
 				appearance Appearance
@@ -32,7 +35,7 @@ DEF TuongPhiaTruoc Transform
 
 		Transform
 		{
-			translation	2.25 0 0
+			translation	1.05 0 0
 			children Shape
 			{
 				appearance Appearance
@@ -50,7 +53,7 @@ DEF TuongPhiaTruoc Transform
 		}
 		Transform
 		{
-			translation 0.6 1.35 0
+			translation 2.7 1.35 0
 			children Shape
 			{
 				appearance Appearance
@@ -97,10 +100,10 @@ Transform
 	translation	3.6 0 0
 }
 
-#ghep cua ra vao
+#cua ra vao
 Transform
 {
-	translation	0.6 0.95 -0.029
+	translation	2.7 0.95 -0.029
 	children Inline
 	{
 		url	"./CuaRaVaoPhai.wrl"
@@ -115,7 +118,7 @@ Transform
 	[
 		Transform
 		{
-			translation	2.25 -0.25 -1
+			translation	0.9 -0.25 -1
 			children Shape
 			{
 				appearance Appearance
@@ -134,7 +137,7 @@ Transform
 
 		DEF VachTruocCua Transform
 		{
-			translation	1.25 0 -0.15
+			translation	2 0 -0.15
 			children Shape
 			{
 				appearance Appearance
@@ -158,7 +161,7 @@ Transform
 
 		Transform
 		{
-			translation	1.25 1.07 -0.6
+			translation	2 1.07 -0.6
 			children Shape
 			{
 				appearance Appearance
@@ -185,7 +188,7 @@ Transform
 	[
 		Transform
 		{
-			translation	2.1 0 -2.3
+			translation	1 0 -2.3
 			children Shape
 			{
 				appearance Appearance
@@ -203,7 +206,7 @@ Transform
 		}
 		DEF	VachNganNhaTam Transform
 		{
-			translation	1.25 0 -1.2
+			translation	2 0 -1.2
 			children Shape
 			{
 				appearance Appearance
@@ -226,7 +229,7 @@ Transform
 		}
 		Transform
 		{
-			translation	1.25 1.08 -1.6
+			translation	2 1.08 -1.6
 			children Shape
 			{
 				appearance Appearance
@@ -249,7 +252,7 @@ Transform
 Transform
 {
 	rotation 0 1 0 3.14
-	translation	2 -1.45 -2.65
+	translation	1.7 -1.45 -2.65
 	children Inline
 	{
 		url	"./TuDungDo/TuDungDo8x8.wrl"
@@ -282,7 +285,7 @@ Transform
 Transform
 {
 	rotation 0 1 0 1.57
-	translation	1.2 0.4 -0.55
+	translation	2 0.4 -0.55
 	scale 0.73 0.8 1
 	children Inline
 	{
@@ -294,7 +297,7 @@ Transform
 Transform
 {
 	rotation 0 1 0 1.57
-	translation	1.25 0.4 -1.65
+	translation	2 0.4 -1.65
 	scale 0.7 0.8 1
 	children Inline
 	{
@@ -312,7 +315,7 @@ Transform
 #cua hanh lang
 Transform
 {
-	translation	0.6 0.95 -8.729
+	translation	2.7 0.95 -8.729
 	children Inline
 	{
 		url	"./CuaRaVaoPhai.wrl"
@@ -378,7 +381,7 @@ DEF	HangGiuong Transform
 		DEF Giuong Transform
 		{
 			rotation 0 1 0 1.57
-			translation	0.8 -1.23 -4.6
+			translation	3.3 -1.23 -4.6
 			children Inline
 			{
 				url	"giuong.wrl"
@@ -393,14 +396,14 @@ DEF	HangGiuong Transform
 Transform
 {
 	children USE HangGiuong
-	translation	2.5 0 0.7
+	translation	-2.5 0 0.7
 }
 
 #Noi that ben trong nha tam
 #guong
 Transform 
 {
-	translation	2 -0.4 -1.1
+	translation	1.3 -0.4 -1.1
 	rotation 1 0 0 -0.174
 	children Shape
 	{
@@ -419,7 +422,7 @@ Transform
 #thanh de do dung ben duoi guong
 Transform
 {
-	translation	2 -0.6 -1.1
+	translation	1.3 -0.6 -1.1
 	children Shape
 	{
 		geometry Box {size 0.6 0.01 0.1}
@@ -431,7 +434,7 @@ Transform
 DEF	TuDien Transform
 {
 	rotation 0 1 0 1.57
-	translation	-0.1 -0.6 -3.1
+	translation	3.3 -0.6 -3.1
 	children
 	[
 		DEF ThanhDoc Transform

@@ -1,0 +1,497 @@
+#VRML V2.0 utf8
+
+
+
+
+
+
+
+
+DEF TuongPhiaTruoc Transform
+{
+children
+[
+Transform
+{
+translation	3.3 0 0
+children Shape
+{
+appearance Appearance
+{
+material Material{
+diffuseColor 1 .85 0
+specularColor .87 .25 .25
+ambientIntensity .157
+shininess 1
+}
+
+}
+geometry Box
+{
+size 0.3 3.5 0.15
+}
+}
+}
+
+Transform
+{
+translation	1.05 0 0
+children Shape
+{
+appearance Appearance
+{
+material Material{
+diffuseColor 1 .85 0
+specularColor .87 .25 .25
+ambientIntensity .157
+shininess 1
+}
+
+}
+geometry Box{size 2.4 3.5 0.15}
+}
+}
+Transform
+{
+translation 2.7 1.35 0
+children Shape
+{
+appearance Appearance
+{
+material Material{
+diffuseColor 1 .85 0
+specularColor .87 .25 .25
+ambientIntensity .157
+shininess 1
+}
+
+}
+geometry Box{size 0.9 0.8 0.15}
+}
+}
+]
+}
+
+
+
+DEF TuongTrai Transform
+{
+translation	-0.22 0 -4.875
+children Shape
+{
+appearance Appearance
+{
+material Material{
+diffuseColor 1 .85 0
+specularColor .87 .25 .25
+ambientIntensity .157
+shininess 1
+}
+
+}
+geometry Box{size 0.15 3.5 9.9}
+}
+}
+
+
+Transform
+{
+children USE TuongTrai
+translation	3.6 0 0
+}
+
+
+Transform
+{
+translation	2.7 0.95 -0.029
+children Inline
+{
+url	"./CuaRaVaoPhai.wrl"
+}
+}
+
+
+
+Transform
+{
+children
+[
+Transform
+{
+translation	0.9 -0.25 -1
+children Shape
+{
+appearance Appearance
+{
+material Material{
+diffuseColor 1 .85 0
+specularColor .87 .25 .25
+ambientIntensity .157
+shininess 1
+}
+
+}
+geometry Box{size 2.1 3 0.1}
+}
+}
+
+DEF VachTruocCua Transform
+{
+translation	2 0 -0.15
+children Shape
+{
+appearance Appearance
+{
+material Material{
+diffuseColor 1 .85 0
+specularColor .87 .25 .25
+ambientIntensity .157
+shininess 1
+}
+
+}
+geometry Box{size 0.1 3.5 0.15}
+}
+}
+Transform
+{
+children USE VachTruocCua
+translation	0 0 -0.8
+}
+
+Transform
+{
+translation	2 1.07 -0.6
+children Shape
+{
+appearance Appearance
+{
+material Material{
+diffuseColor 1 .85 0
+specularColor .87 .25 .25
+ambientIntensity .157
+shininess 1
+}
+
+}
+geometry Box{size 0.1 1.35 1}
+}
+}
+]
+}
+
+
+
+Transform
+{
+children
+[
+Transform
+{
+translation	1 0 -2.3
+children Shape
+{
+appearance Appearance
+{
+material Material{
+diffuseColor 1 .85 0
+specularColor .87 .25 .25
+ambientIntensity .157
+shininess 1
+}
+
+}
+geometry Box{size 2.4 3.5 0.1}
+}
+}
+DEF	VachNganNhaTam Transform
+{
+translation	2 0 -1.2
+children Shape
+{
+appearance Appearance
+{
+material Material{
+diffuseColor 1 .85 0
+specularColor .87 .25 .25
+ambientIntensity .157
+shininess 1
+}
+
+}
+geometry Box{size 0.1 3.5 0.3}
+}
+}
+Transform
+{
+translation	0 0 -0.9
+children USE VachNganNhaTam
+}
+Transform
+{
+translation	2 1.08 -1.6
+children Shape
+{
+appearance Appearance
+{
+material Material{
+diffuseColor 1 .85 0
+specularColor .87 .25 .25
+ambientIntensity .157
+shininess 1
+}
+
+}
+geometry Box{size 0.1 1.35 0.7}
+}
+}
+]
+}
+
+
+Transform
+{
+rotation 0 1 0 3.14
+translation	1.7 -1.45 -2.65
+children Inline
+{
+url	"./TuDungDo/TuDungDo8x8.wrl"
+}
+}
+
+
+Transform
+{
+translation	1.57 -1.76 -4.83
+children Shape
+{
+geometry Box{size 3.72 0.01 9.9}
+appearance Appearance
+{
+texture ImageTexture
+{
+url "./Images/GachLatNha.jpg"
+}
+textureTransform TextureTransform
+{
+scale 11 29
+}
+}
+}
+}
+
+
+
+Transform
+{
+rotation 0 1 0 1.57
+translation	2 0.4 -0.55
+scale 0.73 0.8 1
+children Inline
+{
+url	"./CuaNhaTam.wrl"
+}
+}
+
+
+Transform
+{
+rotation 0 1 0 1.57
+translation	2 0.4 -1.65
+scale 0.7 0.8 1
+children Inline
+{
+url	"./CuaNhaTam.wrl"
+}
+}
+
+
+Transform
+{
+translation	0 0 -8.7
+children USE TuongPhiaTruoc
+}
+
+
+Transform
+{
+translation	2.7 0.95 -8.729
+children Inline
+{
+url	"./CuaRaVaoPhai.wrl"
+}
+}
+
+
+
+Transform
+{
+translation	1.55 -1.25 -9.75
+children Shape
+{
+appearance Appearance
+{
+material Material{
+diffuseColor 1 .85 0
+specularColor .87 .25 .25
+ambientIntensity .157
+shininess 1
+}
+
+}
+geometry Box{size 3.6 1 0.15}
+}
+}
+
+
+Transform
+{
+translation	1.55 1.55 -9.75
+children Shape
+{
+appearance Appearance
+{
+material Material{
+diffuseColor 1 .85 0
+specularColor .87 .25 .25
+ambientIntensity .157
+shininess 1
+}
+
+}
+geometry Box{size 3.6 0.4 0.15}
+}
+}
+
+
+Transform
+{
+translation	0.1 -0.76 -9.8
+children Inline
+{
+url "RaoLuoiHanhLang.wrl"
+}
+}
+
+
+
+DEF	HangGiuong Transform
+{
+children[
+DEF Giuong Transform
+{
+rotation 0 1 0 1.57
+translation	3.3 -1.23 -4.6
+children Inline
+{
+url	"giuong.wrl"
+}
+}
+Transform
+{
+translation	0 0 -1.8
+children USE Giuong
+}]
+}
+Transform
+{
+children USE HangGiuong
+translation	-2.5 0 0.7
+}
+
+
+
+Transform
+{
+translation	1.3 -0.4 -1.1
+rotation 1 0 0 -0.174
+children Shape
+{
+geometry Box{size 0.6 0.4 0.01}
+appearance Appearance
+{
+material Material
+{
+transparency 0.8
+}
+
+}
+}
+}
+
+
+Transform
+{
+translation	1.3 -0.6 -1.1
+children Shape
+{
+geometry Box{size 0.6 0.01 0.1}
+}
+}
+
+
+
+DEF	TuDien Transform
+{
+rotation 0 1 0 1.57
+translation	3.3 -0.6 -3.1
+children
+[
+DEF ThanhDoc Transform
+{
+children Shape
+{
+geometry Box{size 0.01 0.6 0.1}
+appearance Appearance
+{
+material Material
+{
+diffuseColor .61 .61 .61
+specularColor .77 .76 .76
+ambientIntensity .14
+shininess .9
+}
+}
+}
+}
+Transform
+{
+children USE ThanhDoc
+translation	0.3 0 0
+}
+
+DEF ThanhNgang Transform
+{
+children Shape
+{
+geometry Box{size 0.31 0.01 0.1}
+appearance Appearance
+{
+material Material
+{
+diffuseColor .61 .61 .61
+specularColor .77 .76 .76
+ambientIntensity .14
+shininess .9
+}
+}
+}
+translation 0.15 -0.3 0
+}
+Transform
+{
+children USE ThanhNgang
+translation	0 0.6 0
+}
+]
+}
+
+
+Transform
+{
+translation	1.6 1.6 -5
+children Inline
+{
+url "quattran.wrl"
+}
+}
