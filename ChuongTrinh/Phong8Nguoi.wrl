@@ -4,6 +4,13 @@
 
 #   ve tuong xung quanh
 
+#NavigationInfo {
+#	avatarSize [0.25, 1.6, 0.75]
+#	headlight TRUE
+#	speed 3
+#	type ["WALK"]
+#}
+
 #tuong phia truoc
 DEF TuongPhiaTruoc Transform
 {

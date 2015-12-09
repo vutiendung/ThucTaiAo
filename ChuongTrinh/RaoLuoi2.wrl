@@ -130,18 +130,3 @@ Transform
 	children USE MotHangXienHoa
 	translation	0.6 0 0
 }
-Transform
-{
-	children USE MotHangXienHoa
-	translation	1.2 0 0
-}
-Transform
-{
-	children USE MotHangXienHoa
-	translation	1.8 0 0
-}
-Transform
-{
-	children USE MotHangXienHoa
-	translation	2.4 0 0
-}
