@@ -1,0 +1,255 @@
+#VRML V2.0 utf8
+Transform {
+	translation	0 0 0
+	children [
+		#canh cua 1
+		#begin
+		DEF cuatruoc Transform {
+			translation	0.42 0 0
+			children [
+				DEF	sensor1 PlaneSensor {
+					 #offset 0.42 0 0
+					 #autoOffset FALSE
+					 maxPosition 0.42  0
+					 minPosition -0.42 0
+				}
+				Shape {
+					geometry Box {
+						size 0.9 1.5 0.02
+					}
+					appearance Appearance {	
+						material Material {
+							transparency .5
+						}
+
+					}
+				}
+
+				#Thanh du cua 1
+				#begin
+				Transform {
+					translation	-0.46 0 0
+					children [
+						Shape {
+							geometry Box {
+								size 0.03 1.5 0.03
+							}
+							appearance Appearance {
+								material Material {
+								diffuseColor .1 .1 .1
+								specularColor .74 .6 .74
+								ambientIntensity .25
+								shininess .11
+							}
+						
+						  }
+						}
+					]
+				}
+				#Thanh du cua 1
+				#end
+
+				#Thanh du cua 2
+				#Begin
+				Transform {
+					translation	0.46 0 0
+					children [
+						Shape {
+							geometry Box {
+								size 0.03 1.5 0.03
+							}
+							appearance Appearance {
+								material Material {
+								diffuseColor .1 .1 .1
+								specularColor .74 .6 .74
+								ambientIntensity .25
+								shininess .11
+							}
+						
+						  }
+						}
+					]
+				}
+				#Thanh du cua 2
+				#End
+			]
+		}	  
+
+		#canh cua 1 
+		#end
+
+		#Thanh chan duoi cua 1
+		#Begin
+		Transform {
+			translation	0 0.76 0
+			children [
+				Shape {
+					geometry Box {
+						size 1.8 0.035 0.035
+					}
+					appearance Appearance {
+						material Material {
+							diffuseColor .1 .1 .1
+							specularColor .74 .6 .74
+							ambientIntensity .25
+							shininess .11
+						}
+						
+					}
+				}
+			]
+		}
+		#Thanh chan duoi cua 1
+		#End
+
+		#Thanh chan duoi cua 1
+		#Begin
+		Transform {
+			translation	0 -0.76 0
+			children [
+				Shape {
+					geometry Box {
+						size 1.8 0.035 0.035
+					}
+					appearance Appearance {
+						material Material {
+							diffuseColor .1 .1 .1
+							specularColor .74 .6 .74
+							ambientIntensity .25
+							shininess .11
+						}
+						
+					}
+				}
+			]
+		}
+		#Thanh chan duoi cua 1
+		#End
+
+		#Canh cua 2
+		#begin	
+		DEF cuasau Transform {
+			translation	-0.42 0 -0.036
+			children [
+				DEF	sensor2 PlaneSensor {
+					 #offset -0.42 0 0
+					 #autoOffset TRUE
+					 maxPosition 0.42  0
+					 minPosition -0.42 0
+				}
+				Shape {
+					geometry Box {
+						size 0.9 1.5 0.02
+					}
+					appearance Appearance {	
+						material Material {
+							transparency .5
+						}
+
+					}
+				}
+
+				#Thanh du cua 2
+				#begin
+				Transform {
+					translation	-0.46 0 0
+					children [
+						Shape {
+							geometry Box {
+								size 0.03 1.5 0.03
+							}
+							appearance Appearance {
+								material Material {
+								diffuseColor .1 .1 .1
+								specularColor .74 .6 .74
+								ambientIntensity .25
+								shininess .11
+							}
+						
+						  }
+						}
+					]
+				}
+				#Thanh du cua 2
+				#end
+
+				#Thanh du cua 2
+				#Begin
+				Transform {
+					translation	0.46 0 0
+					children [
+						Shape {
+							geometry Box {
+								size 0.03 1.5 0.03
+							}
+							appearance Appearance {
+								material Material {
+								diffuseColor .1 .1 .1
+								specularColor .74 .6 .74
+								ambientIntensity .25
+								shininess .11
+							}
+						
+						  }
+						}
+					]
+				}
+				#Thanh du cua 2
+				#End
+			]
+		}	  
+
+		#canh cua 2 
+		#end
+
+		#Thanh chan duoi cua 2
+		#Begin
+		Transform {
+			translation	0 0.76 -0.036
+			children [
+				Shape {
+					geometry Box {
+						size 1.8 0.035 0.035
+					}
+					appearance Appearance {
+						material Material {
+							diffuseColor .1 .1 .1
+							specularColor .74 .6 .74
+							ambientIntensity .25
+							shininess .11
+						}
+						
+					}
+				}
+			]
+		}
+		#Thanh chan duoi cua 2
+		#End
+
+		#Thanh chan duoi cua 2
+		#Begin
+		Transform {
+			translation	0 -0.76 -0.036
+			children [
+				Shape {
+					geometry Box {
+						size 1.8 0.035 0.035
+					}
+					appearance Appearance {
+						material Material {
+							diffuseColor .1 .1 .1
+							specularColor .74 .6 .74
+							ambientIntensity .25
+							shininess .11
+						}
+						
+					}
+				}
+			]
+		}
+		#Thanh chan duoi cua 3
+		#End		 
+	]
+}
+ROUTE sensor1.translation_changed TO cuatruoc.translation
+ROUTE sensor2.translation_changed TO cuasau.translation

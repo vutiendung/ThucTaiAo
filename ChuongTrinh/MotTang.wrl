@@ -3,10 +3,10 @@
 #dep hanh lang
 Transform
 {
-	translation	-0.75 0 0
+	translation	-1 0 0
 	children Shape
 	{
-		geometry Box {size 66.5 0.1 2.7}
+		geometry Box {size 72.6 0.1 2.7}
 		appearance Appearance
 		{
 			texture	ImageTexture
@@ -16,6 +16,26 @@ Transform
 			textureTransform TextureTransform
 			{
 				scale  233 9
+			}
+		}
+	}
+
+}
+Transform
+{
+	translation	-1 0 4
+	children Shape
+	{
+		geometry Box {size 72.6 0.1 5.3}
+		appearance Appearance
+		{
+			texture	ImageTexture
+			{
+				url	"./Images/GachLatNha.jpg"
+			}
+			textureTransform TextureTransform
+			{
+				scale  233 17
 			}
 		}
 	}
@@ -33,7 +53,7 @@ Group
 			[
 				Transform
 				{
-					translation -30.25 1.8 -1.35
+					translation -33.45 1.8 -1.35
 					children	Inline
 					{
 						url "Phong8Nguoi.wrl"
@@ -41,7 +61,7 @@ Group
 				}
 				Transform
 				{
-					translation -26.5 1.8 -1.35
+					translation -29.7 1.8 -1.35
 					children	Inline
 					{
 						url "Phong8x8DaoNguoc.wrl"
@@ -49,7 +69,7 @@ Group
 				}
 				Transform
 				{
-					translation -22.85 1.8 -1.35
+					translation -26.05 1.8 -1.35
 					children	Inline
 					{
 						url "Phong8Nguoi.wrl"
@@ -135,7 +155,7 @@ Group
 		#4 phong ben phai
 		Transform
 		{
-			translation	2.5 0 0
+			translation	5.3 0 0
 			children
 			[
 				Transform
@@ -184,7 +204,7 @@ Group
 		Transform
 		{
 			rotation 0 1 0 3.14
-			translation	-26.8 1.8 3.75
+			translation	-30 1.8 3.75
 			children Inline
 			{
 				url	"./Phong10Nguoi.wrl"
@@ -193,7 +213,7 @@ Group
 		Transform
 		{
 			rotation 0 1 0 3.14
-			translation	-19.5 1.8 3.75
+			translation	-22.7 1.8 3.75
 			children Inline
 			{
 				url	"./Phong10Nguoi.wrl"
@@ -247,7 +267,7 @@ Group
 		#--------------------------------------
 		Transform
 		{
-			translation	4.2 0 0
+			translation	7 0 0
 			children
 			[
 				Transform
@@ -271,4 +291,55 @@ Group
 			]
 		}
 	]
+}
+
+#lan can to
+Transform
+{
+	translation	-19.15 0.5 6.4
+	children Inline
+	{
+		url	"LanCan.wrl"
+	}
+}
+
+#lan can nho
+Transform
+{
+	rotation 0 1 0 -1.57
+	translation	-37.2 0.6 0
+	children Inline
+	{
+		url	"LanCanNho.wrl"
+	}
+}
+
+Transform
+{
+	rotation 0 1 0 1.57
+	translation	35.2 0.55 0
+	children Inline
+	{
+		url	"LanCanNho.wrl"
+	}
+}
+
+#hanh lang noi 2 khu
+Transform
+{
+	translation	17 0 13
+	children Inline
+	{
+		url	"HanhLang.wrl"
+	}
+}
+
+#khu nha nho thu 2
+Transform
+{
+	translation	16.8 0 45
+	children Inline
+	{
+		url	"KhuNhaThu2.wrl"
+	}
 }

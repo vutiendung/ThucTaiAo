@@ -1,0 +1,106 @@
+#VRML V2.0 utf8
+
+DEF	MotNuaHanhLang Transform
+{
+#	translation	17 0 10
+	children
+	[
+		#nen hanh lang
+		Transform
+		{
+			
+			children Shape
+			{
+				geometry Box{size 7 0.1 14.4}
+				appearance Appearance
+				{
+					texture	ImageTexture
+					{
+						url	"./Images/GachLatNha.jpg"
+					}
+					textureTransform TextureTransform
+					{
+						scale 23 48
+					}
+				}
+			}
+		}
+
+		#tru cot
+		Transform
+		{
+			translation	-3.6 1.75 6.9
+			children Shape
+			{
+				geometry Box{size 0.6 3.5 0.6}
+				appearance Appearance
+				{
+					material Material {
+						diffuseColor 1 .85 0
+						specularColor .87 .25 .25
+						ambientIntensity .157
+						shininess 1
+					}
+				}
+			}
+		}
+
+		Transform
+		{
+			translation	3.6 1.75 6.9
+			children Shape
+			{
+				geometry Box{size 0.6 3.5 0.6}
+				appearance Appearance
+				{
+					material Material {
+						diffuseColor 1 .85 0
+						specularColor .87 .25 .25
+						ambientIntensity .157
+						shininess 1
+					}
+				}
+			}
+		}
+
+		#lan can
+		DEF	LanCan Transform
+		{
+			children
+			[
+				Transform
+				{
+					translation	3.5 0.55 -3.5
+					rotation 0 1 0 1.57
+					children Inline
+					{
+						url	"LanCan.wrl"
+					}
+				}
+
+				Transform
+				{
+					translation	3.5 0.55 3.2 
+					rotation 0 1 0 1.57
+					children Inline
+					{
+						url	"LanCan.wrl"
+					}
+				}
+			]
+		}
+
+		Transform
+		{
+			translation	0 0 -0.3
+			rotation 0 1 0 3.14
+			children USE LanCan
+		}
+	]
+}
+Transform
+{
+	rotation 0 1 0 3.14
+	translation	0 0 14.4
+	children USE MotNuaHanhLang
+}
