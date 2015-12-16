@@ -1,0 +1,86 @@
+#VRML V2.0 utf8
+
+#ghep 8 tang voi nhau
+#tang 1
+Transform
+{
+	children Inline
+	{
+		url	"./MotTang.wrl"
+	}
+}
+
+#tang 2
+Transform
+{
+	translation	0 3.5 0
+	children Inline
+	{
+		url	"./MotTang.wrl"
+	}
+}
+
+#tang 3
+Transform
+{
+	translation	0 7 0
+	children Inline
+	{
+		url	"./MotTang.wrl"
+	}
+}
+#tang 4
+Transform
+{
+	translation	0 10.5 0
+	children Inline
+	{
+		url	"./MotTang.wrl"
+	}
+}
+#tang 5
+Transform
+{
+	translation	0 14 0
+	children Inline
+	{
+		url	"./MotTang.wrl"
+	}
+}
+#tang 5
+Transform
+{
+	translation	0 17.5 0
+	children Inline
+	{
+		url	"./MotTang.wrl"
+	}
+}
+
+#tang 6
+Transform
+{
+	translation	0 21 0
+	children Inline
+	{
+		url	"./MotTang.wrl"
+	}
+}
+#tang 7
+Transform
+{
+	translation	0 24.5 0
+	children Inline
+	{
+		url	"./MotTang.wrl"
+	}
+}
+#tang 8
+Transform
+{
+	translation	0 28 0
+	children Inline
+	{
+		url	"./MotTang.wrl"
+	}
+}

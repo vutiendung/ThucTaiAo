@@ -116,8 +116,9 @@ Group
 
 
 #khu co 3 phong va 1 cau thang
-Group
+Transform
 {
+	translation	0.5 0 0
 	children
 	[
 		Transform
@@ -151,7 +152,7 @@ Group
 }
 Transform
 {
-	translation	1.8 0 0
+	translation	3.2 0 0
 	children
 	[
 
@@ -188,4 +189,24 @@ Transform
 			}
 		}
 	]
+}
+Transform
+{
+	translation	0 -0.01 0
+	children Shape
+	{
+		geometry Box {size 7 0.1 22.5}
+		appearance Appearance
+		{
+			texture	ImageTexture
+			{
+				url	"./Images/GachLatNha.jpg"
+			}
+			textureTransform TextureTransform
+			{
+				scale 23 75
+			}
+		}
+		
+	}
 }
