@@ -39,7 +39,7 @@ DEF TuongPhiaTruoc Transform
 
 		Transform
 		{
-			translation	2.25 0 0
+			translation	2.3 0 0
 			children Shape
 			{
 				appearance Appearance
@@ -52,7 +52,7 @@ DEF TuongPhiaTruoc Transform
 					}
 
 				}
-				geometry Box{size 2.4 3.5 0.15}
+				geometry Box{size 2.5 3.5 0.15}
 			}
 		}
 		Transform
@@ -101,7 +101,7 @@ DEF TuongTrai Transform
 Transform
 {
 	children USE TuongTrai
-	translation	3.6 0 0
+	translation	3.7 0 0
 }
 
 #ghep cua ra vao
@@ -122,7 +122,7 @@ Transform
 	[
 		Transform
 		{
-			translation	2.25 -0.25 -1
+			translation	2.45 -0.25 -1
 			children Shape
 			{
 				appearance Appearance
@@ -141,7 +141,7 @@ Transform
 
 		DEF VachTruocCua Transform
 		{
-			translation	1.25 0 -0.15
+			translation	1.45 0 -0.15
 			children Shape
 			{
 				appearance Appearance
@@ -165,7 +165,7 @@ Transform
 
 		Transform
 		{
-			translation	1.25 1.07 -0.6
+			translation	1.45 1.07 -0.6
 			children Shape
 			{
 				appearance Appearance
@@ -192,7 +192,7 @@ Transform
 	[
 		Transform
 		{
-			translation	2.1 0 -2.3
+			translation	2.3 0 -2.3
 			children Shape
 			{
 				appearance Appearance
@@ -210,7 +210,7 @@ Transform
 		}
 		DEF	VachNganNhaTam Transform
 		{
-			translation	1.25 0 -1.2
+			translation	1.45 0 -1.2
 			children Shape
 			{
 				appearance Appearance
@@ -233,7 +233,7 @@ Transform
 		}
 		Transform
 		{
-			translation	1.25 1.08 -1.6
+			translation	1.45 1.08 -1.6
 			children Shape
 			{
 				appearance Appearance
@@ -256,7 +256,7 @@ Transform
 Transform
 {
 	rotation 0 1 0 3.14
-	translation	2 -1.45 -2.65
+	translation	2.2 -1.45 -2.65
 	children Inline
 	{
 		url	"./TuDungDo/TuDungDo8x8.wrl"
@@ -289,7 +289,7 @@ Transform
 Transform
 {
 	rotation 0 1 0 1.57
-	translation	1.2 0.4 -0.55
+	translation	1.4 0.4 -0.55
 	scale 0.73 0.8 1
 	children Inline
 	{
@@ -301,7 +301,7 @@ Transform
 Transform
 {
 	rotation 0 1 0 1.57
-	translation	1.25 0.4 -1.65
+	translation	1.45 0.4 -1.65
 	scale 0.7 0.8 1
 	children Inline
 	{
@@ -330,7 +330,7 @@ Transform
 #tuong duoi
 Transform
 {
-	translation	1.55 -1.25 -9.75
+	translation	1.65 -1.25 -9.75
 	children Shape
 	{
 		appearance Appearance
@@ -343,14 +343,14 @@ Transform
 			}
 
 		}
-		geometry Box{size 3.6 1 0.15}
+		geometry Box{size 3.8 1 0.15}
 	}
 }
 
 #tuong phia tren
 Transform
 {
-	translation	1.55 1.55 -9.75
+	translation	1.65 1.55 -9.75
 	children Shape
 	{
 		appearance Appearance
@@ -363,14 +363,14 @@ Transform
 			}
 
 		}
-		geometry Box{size 3.6 0.4 0.15}
+		geometry Box{size 3.8 0.4 0.15}
 	}
 }
 
 #Hang Rao Luoi hanh Lang Phia Sau
 Transform
 {
-	translation	0.1 -0.76 -9.8
+	translation	0.18 -0.76 -9.8
 	children Inline
 	{
 		url "RaoLuoiHanhLang.wrl"
@@ -400,14 +400,14 @@ DEF	HangGiuong Transform
 Transform
 {
 	children USE HangGiuong
-	translation	2.5 0 0.7
+	translation	2.6 0 0.7
 }
 
 #Noi that ben trong nha tam
 #guong
 Transform 
 {
-	translation	2 -0.4 -1.1
+	translation	2.2 -0.4 -1.1
 	rotation 1 0 0 -0.174
 	children Shape
 	{
@@ -426,7 +426,7 @@ Transform
 #thanh de do dung ben duoi guong
 Transform
 {
-	translation	2 -0.6 -1.1
+	translation	2.2 -0.6 -1.1
 	children Shape
 	{
 		geometry Box {size 0.6 0.01 0.1}
@@ -493,7 +493,7 @@ DEF	TuDien Transform
 #quat tran
 Transform
 {
-	translation	1.6 1.6 -5
+	translation	1.7 1.6 -5
   children Inline
   {
 	  url "quattran.wrl"

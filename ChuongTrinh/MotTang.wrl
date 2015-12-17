@@ -1,0 +1,274 @@
+#VRML V2.0 utf8
+
+#dep hanh lang
+Transform
+{
+	translation	-0.75 0 0
+	children Shape
+	{
+		geometry Box {size 66.5 0.1 2.7}
+		appearance Appearance
+		{
+			texture	ImageTexture
+			{
+				url	"./Images/GachLatNha.jpg"
+			}
+			textureTransform TextureTransform
+			{
+				scale  233 9
+			}
+		}
+	}
+}
+
+#ghep phong 8 nguoi
+Group
+{
+	children
+	[
+		# 3 phong ben trai
+		Group
+		{
+			children
+			[
+				Transform
+				{
+					translation -30.25 1.8 -1.35
+					children	Inline
+					{
+						url "Phong8Nguoi.wrl"
+					}
+				}
+				Transform
+				{
+					translation -26.5 1.8 -1.35
+					children	Inline
+					{
+						url "Phong8x8DaoNguoc.wrl"
+					}
+				}
+				Transform
+				{
+					translation -22.85 1.8 -1.35
+					children	Inline
+					{
+						url "Phong8Nguoi.wrl"
+					}
+				}
+			]
+		}
+		#8 phong o giua
+		Group
+		{
+			children
+			[
+				Transform
+				{
+					translation -15.8 1.8 -1.35
+					children	Inline
+					{
+						url "Phong8x8DaoNguoc.wrl"
+					}
+				}
+				Transform
+				{
+					translation -12.1 1.8 -1.35
+					children	Inline
+					{
+						url "Phong8Nguoi.wrl"
+					}
+				}
+				#------------------------------------
+				Transform
+				{
+					translation -8.4 1.8 -1.35
+					children	Inline
+					{
+						url "Phong8x8DaoNguoc.wrl"
+					}
+				}
+				Transform
+				{
+					translation -4.75 1.8 -1.35
+					children	Inline
+					{
+						url "Phong8Nguoi.wrl"
+					}
+				}
+				#----------------------------------------
+				Transform
+				{
+					translation -1. 1.8 -1.35
+					children	Inline
+					{
+						url "Phong8x8DaoNguoc.wrl"
+					}
+				}
+				Transform
+				{
+					translation 2.65 1.8 -1.35
+					children	Inline
+					{
+						url "Phong8Nguoi.wrl"
+					}
+				}
+				#-----------------------------------------
+				Transform
+				{
+					translation 6.5 1.8 -1.35
+					children	Inline
+					{
+						url "Phong8x8DaoNguoc.wrl"
+					}
+				}
+				Transform
+				{
+					translation 10.3 1.8 -1.35
+					children	Inline
+					{
+						url "Phong8Nguoi.wrl"
+					}
+				}
+			]
+		}
+
+		#4 phong ben phai
+		Transform
+		{
+			translation	2.5 0 0
+			children
+			[
+				Transform
+				{
+					translation 15.4 1.8 -1.35
+					children	Inline
+					{
+						url "Phong8Nguoi.wrl"
+					}
+				}
+				Transform
+				{
+					translation 19.1 1.8 -1.35
+					children	Inline
+					{
+						url "Phong8Nguoi.wrl"
+					}
+				}
+				#--------------------------------------
+				Transform
+				{
+					translation 22.8 1.8 -1.35
+					children	Inline
+					{
+						url "Phong8Nguoi.wrl"
+					}
+				}
+				Transform
+				{
+					translation 26.5 1.8 -1.35
+					children	Inline
+					{
+						url "Phong8Nguoi.wrl"
+					}
+				} 
+			]
+		}
+	]
+}
+
+#ghep phong 10 nguoi
+Group
+{
+	children
+	[
+		Transform
+		{
+			rotation 0 1 0 3.14
+			translation	-26.8 1.8 3.75
+			children Inline
+			{
+				url	"./Phong10Nguoi.wrl"
+			}
+		}
+		Transform
+		{
+			rotation 0 1 0 3.14
+			translation	-19.5 1.8 3.75
+			children Inline
+			{
+				url	"./Phong10Nguoi.wrl"
+			}
+		}
+
+		#-------------------------------------
+		Transform
+		{
+			translation	1 0 0
+			children
+			[
+				Transform
+				{
+					rotation 0 1 0 3.14
+					translation	-9.3 1.8 3.75
+					children Inline
+					{
+						url	"./Phong10Nguoi.wrl"
+					}
+				}
+				Transform
+				{
+					rotation 0 1 0 3.14
+					translation	-2.05 1.8 3.75
+					children Inline
+					{
+						url	"./Phong10Nguoi.wrl"
+					}
+				}
+				Transform
+				{
+					rotation 0 1 0 3.14
+					translation	5.3 1.8 3.75
+					children Inline
+					{
+						url	"./Phong10Nguoi.wrl"
+					}
+				}
+				Transform
+				{
+					rotation 0 1 0 3.14
+					translation	12.5 1.8 3.75
+					children Inline
+					{
+						url	"./Phong10Nguoi.wrl"
+					}
+				}
+			]
+		}
+		#--------------------------------------
+		Transform
+		{
+			translation	4.2 0 0
+			children
+			[
+				Transform
+				{
+					rotation 0 1 0 3.14
+					translation	20.8 1.8 3.75
+					children Inline
+					{
+						url	"./Phong10Nguoi.wrl"
+					}
+				}
+				Transform
+				{
+					rotation 0 1 0 3.14
+					translation	28 1.8 3.75
+					children Inline
+					{
+						url	"./Phong10Nguoi.wrl"
+					}
+				}
+			]
+		}
+	]
+}

@@ -13,7 +13,7 @@ DEF TuongPhiaTruoc Transform
 	[
 		Transform
 		{
-			translation	3.3 0 0
+			translation	3.35 0 0
 			children Shape
 			{
 				appearance Appearance
@@ -28,7 +28,7 @@ DEF TuongPhiaTruoc Transform
 				}
 				geometry Box
 				{
-					size 0.3 3.5 0.15
+					size 0.4 3.5 0.15
 				}
 			}
 		}
@@ -97,7 +97,7 @@ DEF TuongTrai Transform
 Transform
 {
 	children USE TuongTrai
-	translation	3.6 0 0
+	translation	3.7 0 0
 }
 
 #cua ra vao
@@ -252,7 +252,7 @@ Transform
 Transform
 {
 	rotation 0 1 0 3.14
-	translation	1.7 -1.45 -2.65
+	translation	1.8 -1.45 -2.65
 	children Inline
 	{
 		url	"./TuDungDo/TuDungDo8x8.wrl"
@@ -326,7 +326,7 @@ Transform
 #tuong duoi
 Transform
 {
-	translation	1.55 -1.25 -9.75
+	translation	1.7 -1.25 -9.75
 	children Shape
 	{
 		appearance Appearance
@@ -339,14 +339,14 @@ Transform
 			}
 
 		}
-		geometry Box{size 3.6 1 0.15}
+		geometry Box{size 3.7 1 0.15}
 	}
 }
 
 #tuong phia tren
 Transform
 {
-	translation	1.55 1.55 -9.75
+	translation	1.7 1.55 -9.75
 	children Shape
 	{
 		appearance Appearance
@@ -359,14 +359,14 @@ Transform
 			}
 
 		}
-		geometry Box{size 3.6 0.4 0.15}
+		geometry Box{size 3.7 0.4 0.15}
 	}
 }
 
 #Hang Rao Luoi hanh Lang Phia Sau
 Transform
 {
-	translation	0.1 -0.76 -9.8
+	translation	0.13 -0.76 -9.8
 	children Inline
 	{
 		url "RaoLuoiHanhLang.wrl"
@@ -381,7 +381,7 @@ DEF	HangGiuong Transform
 		DEF Giuong Transform
 		{
 			rotation 0 1 0 1.57
-			translation	3.3 -1.23 -4.6
+			translation	3.4 -1.23 -4.6
 			children Inline
 			{
 				url	"giuong.wrl"
@@ -396,7 +396,7 @@ DEF	HangGiuong Transform
 Transform
 {
 	children USE HangGiuong
-	translation	-2.5 0 0.7
+	translation	-2.6 0 0.7
 }
 
 #Noi that ben trong nha tam
@@ -434,7 +434,7 @@ Transform
 DEF	TuDien Transform
 {
 	rotation 0 1 0 1.57
-	translation	3.3 -0.6 -3.1
+	translation	3.4 -0.6 -3.1
 	children
 	[
 		DEF ThanhDoc Transform
@@ -489,9 +489,22 @@ DEF	TuDien Transform
 #quat tran
 Transform
 {
-	translation	1.6 1.6 -5
+	translation	1.7 1.6 -5
   children Inline
   {
 	  url "quattran.wrl"
   }
+}
+
+#ghep bon cau
+Transform
+{
+	rotation 0 1 0 3.14
+
+	scale 0.03 0.03 0.03
+	translation	4.5 -1.7 -0.1
+	children Inline
+	{
+		url	"boncau.wrl"
+	}
 }

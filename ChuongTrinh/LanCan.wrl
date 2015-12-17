@@ -1,0 +1,130 @@
+#VRML V2.0 utf8
+
+#lan can
+Transform
+{
+	children Shape
+	{
+		geometry Box {size 7 1 0.15}
+		appearance Appearance
+		{
+			material Material {
+				diffuseColor 1 .85 0
+				specularColor .87 .25 .25
+				ambientIntensity .157
+				shininess 1
+			}
+		}
+	}
+}
+
+#tay vin inox
+Transform 
+{
+	rotation 0 0 1 1.57
+	translation	0 0.65 0
+	children Shape
+	{
+		geometry Cylinder
+		{
+			height 7
+			radius 0.05
+		}
+	}
+}
+
+DEF	ThanhDoTayVin Transform
+{
+	translation	0 0.55 0
+	children Shape
+	{
+		geometry Cylinder
+		{
+			height 0.25
+			radius 0.02
+		}
+	}
+}
+   #--------------------------------------------
+Transform
+{
+	children USE ThanhDoTayVin
+	translation	-0.4 0 0
+}
+Transform
+{
+	children USE ThanhDoTayVin
+	translation	-0.8 0 0
+}
+Transform
+{
+	children USE ThanhDoTayVin
+	translation	-1.2 0 0
+}
+Transform
+{
+	children USE ThanhDoTayVin
+	translation	-1.6 0 0
+}
+Transform
+{
+	children USE ThanhDoTayVin
+	translation	-2 0 0
+}
+Transform
+{
+	children USE ThanhDoTayVin
+	translation	-2.4 0 0
+}
+Transform
+{
+	children USE ThanhDoTayVin
+	translation	-2.8 0 0
+}
+Transform
+{
+	children USE ThanhDoTayVin
+	translation	-3.2 0 0
+}
+
+#-------------------------------------------------
+Transform
+{
+	children USE ThanhDoTayVin
+	translation	0.4 0 0
+}
+Transform
+{
+	children USE ThanhDoTayVin
+	translation	0.8 0 0
+}
+Transform
+{
+	children USE ThanhDoTayVin
+	translation	1.2 0 0
+}
+Transform
+{
+	children USE ThanhDoTayVin
+	translation	1.6 0 0
+}
+Transform
+{
+	children USE ThanhDoTayVin
+	translation	2 0 0
+}
+Transform
+{
+	children USE ThanhDoTayVin
+	translation	2.4 0 0
+}
+Transform
+{
+	children USE ThanhDoTayVin
+	translation	2.8 0 0
+}
+Transform
+{
+	children USE ThanhDoTayVin
+	translation	3.2 0 0
+}
