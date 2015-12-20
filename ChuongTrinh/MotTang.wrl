@@ -3,7 +3,7 @@
 #dep hanh lang
 Transform
 {
-	translation	-1 0 0
+	translation	-1 0.15 0
 	children Shape
 	{
 		geometry Box {size 72.6 0.1 2.7}
@@ -21,9 +21,10 @@ Transform
 	}
 
 }
+
 Transform
 {
-	translation	-1 0 4
+	translation	-1 0.15 4
 	children Shape
 	{
 		geometry Box {size 72.6 0.1 5.3}
@@ -307,7 +308,7 @@ Transform
 Transform
 {
 	rotation 0 1 0 -1.57
-	translation	-37.2 0.6 0
+	translation	-37.3 0.53 0
 	children Inline
 	{
 		url	"LanCanNho.wrl"
@@ -317,7 +318,7 @@ Transform
 Transform
 {
 	rotation 0 1 0 1.57
-	translation	35.2 0.55 0
+	translation	35.2 0.53 0
 	children Inline
 	{
 		url	"LanCanNho.wrl"
@@ -341,5 +342,82 @@ Transform
 	children Inline
 	{
 		url	"KhuNhaThu2.wrl"
+	}
+}
+
+#Tuong chan khu nha lon ben phai
+Transform
+{
+	translation	-37.3 1.78 -6.1
+	children Shape
+	{
+		geometry Box {size 0.15 3.5 10}
+		appearance Appearance
+		{
+			material Material {
+				diffuseColor 1 .85 0
+			}
+
+		}
+	}
+}
+
+Transform
+{
+	translation	-35.38 1.78 -11.11
+	children Shape
+	{
+		geometry Box {size 4 3.5 0.15}
+		appearance Appearance
+		{
+			material Material {
+				diffuseColor 1 .85 0
+			}
+
+		}
+	}
+}
+
+Transform
+{
+	translation	-19.3 1.78 -11.11
+	children Shape
+	{
+		geometry Box {size 6.8 3.5 0.15}
+		appearance Appearance
+		{
+			material Material {
+				diffuseColor 1 .85 0
+			}
+
+		}
+	}
+}
+
+Transform
+{
+	translation	17.1 1.78 -11.11
+	children Shape
+	{
+		geometry Box {size 6.8 3.5 0.15}
+		appearance Appearance
+		{
+			material Material {
+				diffuseColor 1 .85 0
+			}
+
+		}
+	}
+}
+
+#cau thang gan voi thang may ben phai
+Transform
+{
+	scale 1 0.5 1
+	rotation  0 1 0 1.57
+	translation	18 0 -8
+	children Inline
+	{
+		url	"cauthangbo.wrl"
 	}
 }

@@ -2,51 +2,51 @@
 
 #ghep 8 tang voi nhau
 
-#Transform
-#{
-#	children Inline
-#	{
-#		url	"./MotTang.wrl"
-#	}
-#}
+Transform
+{
+	children Inline
+	{
+		url	"./MotTang.wrl"
+	}
+}
 
 
-#Transform
-#{
-#	translation	0 3.5 0
-#	children Inline
-#	{
-#		url	"./MotTang.wrl"
-#	}
-#}
+Transform
+{
+	translation	0 3.5 0
+	children Inline
+	{
+		url	"./MotTang.wrl"
+	}
+}
 
 
-#Transform
-#{
-#	translation	0 7 0
-#	children Inline
-#	{
-#		url	"./MotTang.wrl"
-#	}
-#}
+Transform
+{
+	translation	0 7 0
+	children Inline
+	{
+		url	"./MotTang.wrl"
+	}
+}
 
-#Transform
-#{
-#	translation	0 10.5 0
-#	children Inline
-#	{
-#		url	"./MotTang.wrl"
-#	}
-#}
+Transform
+{
+	translation	0 10.5 0
+	children Inline
+	{
+		url	"./MotTang.wrl"
+	}
+}
 
-#Transform
-#{
-#	translation	0 14 0
-#	children Inline
-#	{
-#		url	"./MotTang.wrl"
-#	}
-#}
+Transform
+{
+	translation	0 14 0
+	children Inline
+	{
+		url	"./MotTang.wrl"
+	}
+}
 
 Transform
 {
@@ -86,13 +86,15 @@ Transform
 }
 Transform
 {
-	translation	17 28.05 45
+	translation	16.8 28.05 45
 	children Inline
 	{
 		url	"MaiNhaNho.wrl"
 	}
 }
 
+
+#mai nha hanh lang noi 2 khu
 Transform
 {
 	translation	17 28.03 20
@@ -109,3 +111,15 @@ Transform
 		}
 	}
 }
+
+
+Transform
+{
+	rotation 0 1 0 1.57
+	translation	15.3 -1.7 -3.7
+	children Inline
+	{
+		url	"thangmay.wrl"
+	}
+}
+

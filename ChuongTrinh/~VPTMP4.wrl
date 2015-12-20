@@ -1,0 +1,125 @@
+#VRML V2.0 utf8
+
+
+
+Transform
+{
+children Inline
+{
+url	"./MotTang.wrl"
+}
+}
+
+
+Transform
+{
+translation	0 3.5 0
+children Inline
+{
+url	"./MotTang.wrl"
+}
+}
+
+
+Transform
+{
+translation	0 7 0
+children Inline
+{
+url	"./MotTang.wrl"
+}
+}
+
+Transform
+{
+translation	0 10.5 0
+children Inline
+{
+url	"./MotTang.wrl"
+}
+}
+
+Transform
+{
+translation	0 14 0
+children Inline
+{
+url	"./MotTang.wrl"
+}
+}
+
+Transform
+{
+translation	0 17.5 0
+children Inline
+{
+url	"./MotTang.wrl"
+}
+}
+
+
+Transform
+{
+translation	0 21 0
+children Inline
+{
+url	"./MotTang.wrl"
+}
+}
+
+Transform
+{
+translation	0 24.5 0
+children Inline
+{
+url	"./MotTang.wrl"
+}
+}
+
+Transform
+{
+translation	-1 28.05 -2.5
+children Inline
+{
+url	"MaiNhaLon.wrl"
+}
+}
+Transform
+{
+translation	16.8 28.05 45
+children Inline
+{
+url	"MaiNhaNho.wrl"
+}
+}
+
+
+
+Transform
+{
+translation	17 28.03 20
+children Shape
+{
+geometry Box{size 8 0.05 28.8}
+appearance Appearance
+{
+material Material
+{
+ambientIntensity 0
+shininess 0
+}
+}
+}
+}
+
+
+Transform
+{
+rotation 0 1 0 1.57
+translation	15.3 -1.7 -3.7
+children Inline
+{
+url	"thangmay.wrl"
+}
+}
+

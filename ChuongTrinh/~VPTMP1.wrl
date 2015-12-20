@@ -1,0 +1,423 @@
+#VRML V2.0 utf8
+
+
+Transform
+{
+translation	-1 0.15 0
+children Shape
+{
+geometry Box{size 72.6 0.1 2.7}
+appearance Appearance
+{
+texture	ImageTexture
+{
+url	"./Images/GachLatNha.jpg"
+}
+textureTransform TextureTransform
+{
+scale 233 9
+}
+}
+}
+
+}
+
+Transform
+{
+translation	-1 0.15 4
+children Shape
+{
+geometry Box{size 72.6 0.1 5.3}
+appearance Appearance
+{
+texture	ImageTexture
+{
+url	"./Images/GachLatNha.jpg"
+}
+textureTransform TextureTransform
+{
+scale 233 17
+}
+}
+}
+}
+
+
+Group
+{
+children
+[
+
+Group
+{
+children
+[
+Transform
+{
+translation -33.45 1.8 -1.35
+children	Inline
+{
+url "Phong8Nguoi.wrl"
+}
+}
+Transform
+{
+translation -29.7 1.8 -1.35
+children	Inline
+{
+url "Phong8x8DaoNguoc.wrl"
+}
+}
+Transform
+{
+translation -26.05 1.8 -1.35
+children	Inline
+{
+url "Phong8Nguoi.wrl"
+}
+}
+]
+}
+
+Group
+{
+children
+[
+Transform
+{
+translation -15.8 1.8 -1.35
+children	Inline
+{
+url "Phong8x8DaoNguoc.wrl"
+}
+}
+Transform
+{
+translation -12.1 1.8 -1.35
+children	Inline
+{
+url "Phong8Nguoi.wrl"
+}
+}
+
+Transform
+{
+translation -8.4 1.8 -1.35
+children	Inline
+{
+url "Phong8x8DaoNguoc.wrl"
+}
+}
+Transform
+{
+translation -4.75 1.8 -1.35
+children	Inline
+{
+url "Phong8Nguoi.wrl"
+}
+}
+
+Transform
+{
+translation -1. 1.8 -1.35
+children	Inline
+{
+url "Phong8x8DaoNguoc.wrl"
+}
+}
+Transform
+{
+translation 2.65 1.8 -1.35
+children	Inline
+{
+url "Phong8Nguoi.wrl"
+}
+}
+
+Transform
+{
+translation 6.5 1.8 -1.35
+children	Inline
+{
+url "Phong8x8DaoNguoc.wrl"
+}
+}
+Transform
+{
+translation 10.3 1.8 -1.35
+children	Inline
+{
+url "Phong8Nguoi.wrl"
+}
+}
+]
+}
+
+
+Transform
+{
+translation	5.3 0 0
+children
+[
+Transform
+{
+translation 15.4 1.8 -1.35
+children	Inline
+{
+url "Phong8Nguoi.wrl"
+}
+}
+Transform
+{
+translation 19.1 1.8 -1.35
+children	Inline
+{
+url "Phong8Nguoi.wrl"
+}
+}
+
+Transform
+{
+translation 22.8 1.8 -1.35
+children	Inline
+{
+url "Phong8Nguoi.wrl"
+}
+}
+Transform
+{
+translation 26.5 1.8 -1.35
+children	Inline
+{
+url "Phong8Nguoi.wrl"
+}
+}
+]
+}
+]
+}
+
+
+Group
+{
+children
+[
+Transform
+{
+rotation 0 1 0 3.14
+translation	-30 1.8 3.75
+children Inline
+{
+url	"./Phong10Nguoi.wrl"
+}
+}
+Transform
+{
+rotation 0 1 0 3.14
+translation	-22.7 1.8 3.75
+children Inline
+{
+url	"./Phong10Nguoi.wrl"
+}
+}
+
+
+Transform
+{
+translation	1 0 0
+children
+[
+Transform
+{
+rotation 0 1 0 3.14
+translation	-9.3 1.8 3.75
+children Inline
+{
+url	"./Phong10Nguoi.wrl"
+}
+}
+Transform
+{
+rotation 0 1 0 3.14
+translation	-2.05 1.8 3.75
+children Inline
+{
+url	"./Phong10Nguoi.wrl"
+}
+}
+Transform
+{
+rotation 0 1 0 3.14
+translation	5.3 1.8 3.75
+children Inline
+{
+url	"./Phong10Nguoi.wrl"
+}
+}
+Transform
+{
+rotation 0 1 0 3.14
+translation	12.5 1.8 3.75
+children Inline
+{
+url	"./Phong10Nguoi.wrl"
+}
+}
+]
+}
+
+Transform
+{
+translation	7 0 0
+children
+[
+Transform
+{
+rotation 0 1 0 3.14
+translation	20.8 1.8 3.75
+children Inline
+{
+url	"./Phong10Nguoi.wrl"
+}
+}
+Transform
+{
+rotation 0 1 0 3.14
+translation	28 1.8 3.75
+children Inline
+{
+url	"./Phong10Nguoi.wrl"
+}
+}
+]
+}
+]
+}
+
+
+Transform
+{
+translation	-19.15 0.5 6.4
+children Inline
+{
+url	"LanCan.wrl"
+}
+}
+
+
+Transform
+{
+rotation 0 1 0 -1.57
+translation	-37.3 0.53 0
+children Inline
+{
+url	"LanCanNho.wrl"
+}
+}
+
+Transform
+{
+rotation 0 1 0 1.57
+translation	35.2 0.53 0
+children Inline
+{
+url	"LanCanNho.wrl"
+}
+}
+
+
+Transform
+{
+translation	17 0 13
+children Inline
+{
+url	"HanhLang.wrl"
+}
+}
+
+
+Transform
+{
+translation	16.8 0 45
+children Inline
+{
+url	"KhuNhaThu2.wrl"
+}
+}
+
+
+Transform
+{
+translation	-37.3 1.78 -6.1
+children Shape
+{
+geometry Box{size 0.15 3.5 10}
+appearance Appearance
+{
+material Material{
+diffuseColor 1 .85 0
+}
+
+}
+}
+}
+
+Transform
+{
+translation	-35.38 1.78 -11.11
+children Shape
+{
+geometry Box{size 4 3.5 0.15}
+appearance Appearance
+{
+material Material{
+diffuseColor 1 .85 0
+}
+
+}
+}
+}
+
+Transform
+{
+translation	-19.3 1.78 -11.11
+children Shape
+{
+geometry Box{size 6.8 3.5 0.15}
+appearance Appearance
+{
+material Material{
+diffuseColor 1 .85 0
+}
+
+}
+}
+}
+
+Transform
+{
+translation	17.1 1.78 -11.11
+children Shape
+{
+geometry Box{size 6.8 3.5 0.15}
+appearance Appearance
+{
+material Material{
+diffuseColor 1 .85 0
+}
+
+}
+}
+}
+
+
+Transform
+{
+scale 1 0.5 1
+rotation 0 1 0 1.57
+translation	18 0 -8
+children Inline
+{
+url	"cauthangbo.wrl"
+}
+}

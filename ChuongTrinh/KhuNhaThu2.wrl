@@ -2,6 +2,7 @@
 
 Transform
 {
+	translation	0 0.15 0
 	children Shape
 	{
 		geometry Box {size 37.4 0.1 2.7}
@@ -192,10 +193,10 @@ Transform
 }
 Transform
 {
-	translation	0 -0.01 0
+	translation	0 0.1 0
 	children Shape
 	{
-		geometry Box {size 7 0.1 22.5}
+		geometry Box {size 7 0.1 22.3}
 		appearance Appearance
 		{
 			texture	ImageTexture
@@ -208,5 +209,90 @@ Transform
 			}
 		}
 		
+	}
+}
+
+#tuong chan hanh lang
+Transform
+{
+	translation	0 1.75 11.15
+	children Shape
+	{
+		geometry Box {size 7.2 3.5 0.15}
+		appearance Appearance
+		{
+			material Material {
+				diffuseColor 1 .85 0
+			}
+
+		}
+	}
+}
+#hanh lang chan ben phai hanh lang
+Transform
+{
+	rotation 0 1 0 1.57
+
+	translation	18.63 0.53 0
+	children Inline
+	{
+		url	"LanCanNho.wrl"
+	}
+}
+
+#khu cau than ben phai
+
+DEF	TuongChanNgang Transform
+{
+	translation	-16.9 1.75 11.15
+	children Shape
+	{
+		geometry Box {size 4 3.5 0.15}
+		appearance Appearance
+		{
+			material Material {
+				diffuseColor 1 .85 0
+			}
+
+		}
+	}
+}
+Transform
+{
+	children USE TuongChanNgang
+	translation	0 0.05 -22.28
+}
+
+
+DEF	TuongChanDoc Transform
+{
+	translation	-18.83 1.79 -6.15
+	children Shape
+	{
+		geometry Box {size 0.15 3.5 10}
+		appearance Appearance
+		{
+			material Material {
+				diffuseColor 1 .85 0
+			}
+
+		}
+	}
+}
+
+Transform
+{
+	children USE TuongChanDoc
+	translation	0 -0.05 12.3
+}
+
+Transform
+{
+	rotation 0 1 0 -1.57
+
+	translation	-18.8 0.52 0
+	children Inline
+	{
+		url	"LanCanNho.wrl"
 	}
 }

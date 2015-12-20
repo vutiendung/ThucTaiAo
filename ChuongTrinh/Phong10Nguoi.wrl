@@ -384,7 +384,7 @@ Group
 #nen nha
 Transform
 {
-	translation	 3.65 -1.75 -0.2
+	translation	 3.65 -1.737 -0.2
 	children Shape
 	{
 		geometry Box{size 7.4 0.01 5.2}
