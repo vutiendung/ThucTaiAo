@@ -24,9 +24,7 @@ DEF TuongPhiaTruoc Transform
 				{
 					material Material {
 						diffuseColor 1 .85 0
-						specularColor .87 .25 .25
-						ambientIntensity .157
-						shininess 1
+						
 					}
 
 				}
@@ -46,9 +44,7 @@ DEF TuongPhiaTruoc Transform
 				{
 					material Material {
 						diffuseColor 1 .85 0
-						specularColor .87 .25 .25
-						ambientIntensity .157
-						shininess 1
+						
 					}
 
 				}
@@ -64,9 +60,7 @@ DEF TuongPhiaTruoc Transform
 				{
 					material Material {
 						diffuseColor 1 .85 0
-						specularColor .87 .25 .25
-						ambientIntensity .157
-						shininess 1
+						
 					}
 
 				}
@@ -129,9 +123,7 @@ Transform
 				{
 					material Material {
 						diffuseColor 1 .85 0
-						specularColor .87 .25 .25
-						ambientIntensity .157
-						shininess 1
+						
 					}
 
 				}
@@ -148,9 +140,7 @@ Transform
 				{
 					material Material {
 						diffuseColor 1 .85 0
-						specularColor .87 .25 .25
-						ambientIntensity .157
-						shininess 1
+						
 					}
 
 				}
@@ -172,9 +162,7 @@ Transform
 				{
 					material Material {
 						diffuseColor 1 .85 0
-						specularColor .87 .25 .25
-						ambientIntensity .157
-						shininess 1
+						
 					}
 
 				}
@@ -199,9 +187,7 @@ Transform
 				{
 					material Material {
 						diffuseColor 1 .85 0
-						specularColor .87 .25 .25
-						ambientIntensity .157
-						shininess 1
+						
 					}
 
 				}
@@ -217,9 +203,7 @@ Transform
 				{
 					material Material {
 						diffuseColor 1 .85 0
-						specularColor .87 .25 .25
-						ambientIntensity .157
-						shininess 1
+						
 					}
 
 				}
@@ -240,9 +224,7 @@ Transform
 				{
 					material Material {
 						diffuseColor 1 .85 0
-						specularColor .87 .25 .25
-						ambientIntensity .157
-						shininess 1
+						
 					}
 
 				}

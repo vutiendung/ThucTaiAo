@@ -1,0 +1,48 @@
+#VRML V2.0 utf8
+
+#nen
+#nen khu nha to
+#Transform
+#{
+#	children Shape
+#	{
+#		geometry Box{size 72 0.1 18}
+#	}
+#}
+
+Transform
+{
+	children Shape
+	{
+		geometry IndexedFaceSet
+		{
+			ccw	FALSE
+			coord Coordinate
+			{
+				point
+				[
+					-36 0 9,
+					-36 0 -9,
+					36 0 -9,
+					36 0 9
+					-36 1 0,
+					36 1 0
+				]
+			}
+			coordIndex 
+			[
+			   0 1 2 3 -1
+			]
+		}
+		appearance Appearance
+		{
+			material Material {
+				diffuseColor .88 .15 .01
+				specularColor .19 .03 .03
+				ambientIntensity .0833
+				shininess .08
+			}
+
+		}
+	}
+}
