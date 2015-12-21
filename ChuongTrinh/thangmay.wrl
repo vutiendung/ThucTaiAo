@@ -2,42 +2,15 @@
 Transform {
 	translation	0 0 0
 	children [
-		  DEF thangmay Transform{
-					translation	0 0 0
-					children [
-						#Tuong ngan cach hai o thang may
-						#begin
-						Transform {
-							translation	0 0 0
-							children [
-								Shape {
-									geometry Box {
-										size 1.2 3.5 0.5  
-									}
-									appearance Appearance {
-										material Material {
-											diffuseColor .8 0 0
-											specularColor .1 .1 .1
-											emissiveColor .1 0 0
-											ambientIntensity .0667
-										} 
-									}
-								}
-							]
-						}
-						#Tuong ngan cach hai o thang may
-						#end
-
-						#Thu nghiem thang may
-						#Begin
-						Transform {
-							translation	1.13 -1.73 -0.8
-							children [
-								DEF hopthangmay Transform {
-										translation	0 0 0
-	
-										children [
-											#Than thang may
+					#Hop thang may 1
+					#Begin
+					Transform{
+						translation	1.13 -1.73 -0.8
+						children [
+							DEF	hopthangmay1 Transform {
+								translation	0 0 0
+								children [
+									  #Than thang may
 											#Begin
 
 											#Day thang may
@@ -80,7 +53,7 @@ Transform {
 
 												#Den thang may
 												#Begin
-												Transform {
+												DEF lamps Transform {
 													translation	0 -0.05 0
 													scale 0.5 0.13 0.5
 													children [
@@ -164,55 +137,7 @@ Transform {
 											]
 										}
 										#tuong sau
-										#end
-		
-										#Canh cua 1
-										#bengin
-										DEF cua1 Transform {
-											translation	0.2505 1.185 0.53
-											children [
-												Shape {
-													geometry Box {
-														size 0.5 2.4 0.02
-													}
-													appearance Appearance {
-														material Material {
-															diffuseColor .38 .35 .35
-															specularColor .76 .74 .59
-															ambientIntensity .0933
-															shininess .07
-														}
-						
-													}
-												}
-											]
-										}
-										#Canh cua 1
-										#End
-
-										#Canh cua 2
-										#Begin
-										DEF cua2 Transform {
-											translation	-0.2505 1.185 0.53
-											children [
-												Shape {
-													geometry Box {
-														size 0.5 2.4 0.02
-													}
-													appearance Appearance {
-														material Material {
-															diffuseColor .38 .35 .35
-															specularColor .76 .74 .59
-															ambientIntensity .0933
-															shininess .07
-														}
-						
-													}
-												}
-											]
-										}
-										#Canh cua 2
-										#End
+										#end   
 
 										#Than thang may
 										#end
@@ -291,22 +216,27 @@ Transform {
 												Transform {
 													translation	0.04 -0.1 0.009
 													rotation 1 0 0 1.6
-													children [				  
-														DEF	closedoor TouchSensor {}
-														Shape {
-															geometry Cylinder {
-																bottom TRUE
-																height 0.03
-																radius 0.02
-																side TRUE
-																top	TRUE
-															}
-															appearance Appearance {
-																texture	ImageTexture {
-																	url	"Img/close.png"
-																}
-															}
-														}
+													children [			
+														DEF dongcua Transform {
+															translation	0 0 0
+															children [
+																DEF	closedoor TouchSensor {}
+																	Shape {
+																		geometry Cylinder {
+																			bottom TRUE
+																			height 0.03
+																			radius 0.02
+																			side TRUE
+																			top	TRUE
+																		}
+																		appearance Appearance {
+																			texture	ImageTexture {
+																				url	"Img/close.png"
+																			}
+																		}
+																	}
+															]
+														} 
 													]
 												}
 
@@ -314,22 +244,28 @@ Transform {
 												Transform {
 													translation	-0.04 -0.1 0.009
 													rotation 1 0 0 1.6
-													children [
-														DEF	opendoor TouchSensor {}
-														Shape {
-															geometry Cylinder {
-																bottom TRUE
-																height 0.03
-																radius 0.02
-																side TRUE
-																top	TRUE
-															}
-															appearance Appearance {
-																texture	ImageTexture {
-																	url	"Img/open.png"
-																}
-															}
+													children [	
+														DEF mocua Transform {
+															translation	0 0 0
+															children [
+																DEF	opendoor TouchSensor {}
+																	Shape {
+																		geometry Cylinder {
+																			bottom TRUE
+																			height 0.03
+																			radius 0.02
+																			side TRUE
+																			top	TRUE
+																		}
+																		appearance Appearance {
+																			texture	ImageTexture {
+																				url	"Img/open.png"
+																			}
+																		}
+																	}	
+															]
 														}
+														
 													]
 												}
 
@@ -535,14 +471,542 @@ Transform {
 										}
 										#Bang dieu khien
 										#End
-									]
-	
+								]
+							}
+						]
+					}
+					#Hop thang may 1
+					#End
+
+					#Hop thang may 2
+					#Begin
+					Transform{
+						translation	-1.13 -1.73 -0.8
+						children [
+							DEF	hopthangmay2 Transform {
+								translation	0 0 0
+								children [
+									  #Than thang may
+											#Begin
+
+											#Day thang may
+											#begin
+											Transform {
+											translation	0 0 0
+											children [
+												Shape {
+													geometry Box {
+														size 1 0.03 1
+													}
+													appearance Appearance {
+														material Material {
+															diffuseColor .38 .35 .35  
+														}
+						
+													}
+												}
+											]
+										}
+										#Day thang may 
+										#End
+
+										#Mai thang may
+										#begin
+										Transform {
+											translation	0 2.4 0
+											children [
+												Shape {
+													geometry Box {
+														size 1 0.03 1
+													}
+													appearance Appearance {
+														material Material {
+															diffuseColor .38 .35 .35  
+														}
+						
+													}
+												}
+
+												#Den thang may
+												#Begin
+												Transform {
+													translation	0 -0.05 0 
+													children [
+														USE	lamps
+													]
+												}
+												#Den thang may
+												#End
+											]
+										}
+										#Mai thang may 
+										#End  
+
+										#Tuong ben 1
+										#begin
+										Transform {
+											translation	0.51 1.185 0
+											children [
+												Shape {
+													geometry Box {
+														size 0.02 2.4 1
+													}
+													appearance Appearance {
+														material Material {
+															diffuseColor .38 .35 .35  
+														}
+						
+													}
+												}
+											]
+										}
+										#truong ben 1
+										#end
+
+										#Tuong ben 2
+										#begin
+										Transform {
+											translation	-0.51 1.185 0
+											children [
+												Shape {
+													geometry Box {
+														size 0.02 2.4 1
+													}
+													appearance Appearance {
+														material Material {
+															diffuseColor .38 .35 .35
+														}
+						
+													}
+												}
+											]
+										}
+										#truong ben 2
+										#end
+
+										#Tuong sau
+										#begin
+										Transform {
+											translation	0 1.185 -0.51
+											children [
+												Shape {
+													geometry Box {
+														size 1.04 2.4 0.02
+													}
+													appearance Appearance {
+														material Material {
+															diffuseColor .38 .35 .35  
+														}
+						
+													}
+												}
+											]
+										}
+										#tuong sau
+										#end   
+
+										#Than thang may
+										#end
+
+										#Mat ngoai 1
+										#Begin
+										 Transform {
+											translation	0.423 1.185 0.52
+											children [
+												Shape {
+													geometry Box {
+														size 0.2 2.4 0.04
+													}
+													appearance Appearance {
+														material Material {
+															diffuseColor .38 .35 .35
+															specularColor .76 .74 .59
+															ambientIntensity .0933
+															shininess .07
+														}
+						
+													}
+												}
+											]
+										}
+										#Mat ngoai 1
+										#End
+
+										#Mat ngoai 2
+										#Begin
+										Transform {
+											translation	-0.423 1.185 0.52
+											children [
+												Shape {
+													geometry Box {
+														size 0.2 2.4 0.04
+													}
+													appearance Appearance {
+														material Material {
+															diffuseColor .38 .35 .35
+															specularColor .76 .74 .59
+															ambientIntensity .0933
+															shininess .07
+														}
+						
+													}
+												}
+												Transform {
+													translation	0 0 0
+													children [
+													]
+												}
+											]
+										}
+										#Mat ngoai 2
+										#End
+
+										#Bang dieu khien
+										#Begin
+										Transform {
+											translation -0.42 1.2 0.5
+											rotation 0 1 0 3.15
+											children [
+												Shape {
+													geometry Box {
+														size 0.17 0.3 0.04
+													}
+													appearance Appearance {
+														material Material {
+															diffuseColor 0 0 0
+														}
+						
+													}
+												}
+												#Nut dong cua
+												Transform {
+													translation	0.04 -0.1 0.009	 
+													children [				  
+														USE	dongcua
+													]
+												}
+
+												#Nut mo cua
+												Transform {
+													translation	-0.04 -0.1 0.009
+													rotation 1 0 0 1.6
+													children [
+														USE	mocua
+													]
+												}
+
+												#Nut tang 1	   
+												Transform {
+													translation	0 0.128 0.009
+													rotation 1 0 0 1.6
+													children [
+														DEF	button2_1 TouchSensor	{}
+														Shape {
+															geometry Cylinder {
+																bottom TRUE
+																height 0.03
+																radius 0.02
+																side TRUE
+																top	TRUE
+															}
+															appearance Appearance {
+																texture	ImageTexture {
+																	url	"Img/one.png"
+																}
+															}
+														}
+													]
+												}
+												#Nut tang 2
+												Transform {
+													translation	-0.04 0.1 0.009
+													rotation 1 0 0 1.6
+													children [
+														DEF	button2_2	TouchSensor	{}
+														Shape {
+															geometry Cylinder {
+																bottom TRUE
+																height 0.03
+																radius 0.02
+																side TRUE
+																top	TRUE
+															}
+															appearance Appearance {
+																texture	ImageTexture {
+																	url	"Img/two.png"
+																}
+															}
+														}
+													]
+												}
+												#Nut tang 3
+												Transform {
+													translation	0.04 0.1 0.009
+													rotation 1 0 0 1.6
+													children [
+														DEF	button2_3 TouchSensor	{}
+														Shape {
+															geometry Cylinder {
+																bottom TRUE
+																height 0.03
+																radius 0.02
+																side TRUE
+																top	TRUE
+															}
+															appearance Appearance {
+																texture	ImageTexture {
+																	url	"Img/three.png"
+																}
+															}
+														}
+													]
+												}
+												#Nut tang 4
+												Transform {
+													translation	-0.04 0.05 0.009
+													rotation 1 0 0 1.6
+													children [
+														DEF	button2_4	TouchSensor	{}
+														Shape {
+															geometry Cylinder {
+																bottom TRUE
+																height 0.03
+																radius 0.02
+																side TRUE
+																top	TRUE
+															}
+															appearance Appearance {
+																texture	ImageTexture {
+																	url	"Img/four.png"
+																}
+															}
+														}
+													]
+												}
+												#Nut tang 5
+												Transform {
+													translation	0.04 0.05 0.009
+													rotation 1 0 0 1.6
+													children [
+														DEF	button2_5 TouchSensor	{}
+														Shape {
+															geometry Cylinder {
+																bottom TRUE
+																height 0.03
+																radius 0.02
+																side TRUE
+																top	TRUE
+															}
+															appearance Appearance {	  
+																texture	ImageTexture {
+																	url	"Img/five.png"
+																}
+															}
+														}
+													]
+												}
+												#Nut tang 6
+												Transform {
+													translation	-0.04 0 0.009
+													rotation 1 0 0 1.6
+													children [
+														DEF	button2_6	TouchSensor	{}
+														Shape {
+															geometry Cylinder {
+																bottom TRUE
+																height 0.03
+																radius 0.02
+																side TRUE
+																top	TRUE
+															}
+															appearance Appearance {
+																texture	ImageTexture {
+																	url	"Img/six.png"
+																}
+															}
+														}
+													]
+												}
+												#Nut tang 7
+												Transform {
+													translation	0.04 0 0.009
+													rotation 1 0 0 1.6
+													children [
+														DEF	button2_7	TouchSensor	{}
+														Shape {
+															geometry Cylinder {
+																bottom TRUE
+																height 0.03
+																radius 0.02
+																side TRUE
+																top	TRUE
+															}
+															appearance Appearance {
+																texture	ImageTexture {
+																	url	"Img/seven.png"
+																}
+															}
+														}
+													]
+												}
+												#Nut tang 8
+												Transform {
+													translation	-0.04 -0.05 0.009
+													rotation 1 0 0 1.6
+													children [
+														DEF	button2_8	TouchSensor	{}
+														Shape {
+															geometry Cylinder {
+																bottom TRUE
+																height 0.03
+																radius 0.02
+																side TRUE
+																top	TRUE
+															}
+															appearance Appearance {
+																texture	ImageTexture {
+																	url	"Img/eight.png"
+																}
+															}
+														}
+													]
+												}
+												#Nut tang 9
+												Transform {
+													translation	0.04 -0.05 0.009
+													rotation 1 0 0 1.6
+													children [
+														DEF	button2_9	TouchSensor	{}
+														Shape {
+															geometry Cylinder {
+																bottom TRUE
+																height 0.03
+																radius 0.02
+																side TRUE
+																top	TRUE
+															}
+															appearance Appearance {
+																texture	ImageTexture {
+																	url	"Img/nine.png"
+																}
+															}
+														}
+													]
+												}
+											]
+										}
+										#Bang dieu khien
+										#End
+								]
+							}
+						]
+					}
+					#Hop thang may 2
+					#End
+
+					Transform {
+							translation	0 1 0.25
+							children [
+								Shape {
+									geometry Box {
+										size 0.4 0.15 0.01
+									}
+									appearance Appearance {
+										texture	ImageTexture {
+										url	["Img/one.png"]
+									}
+										}
+									}
+								]
+							}
+		DEF thangmay Transform{
+					translation	0 0 0
+					children [	  
+						#Tuong ngan cach hai o thang may
+						#begin
+						Transform {
+							translation	0 0 0
+							children [
+								Shape {
+									geometry Box {
+										size 1.2 3.5 0.5  
+									}
+									appearance Appearance {
+										material Material {
+											diffuseColor .8 0 0
+											specularColor .1 .1 .1
+											emissiveColor .1 0 0
+											ambientIntensity .0667
+										} 
+									}
 								}
 							]
 						}
-						#Thu nghiem thang may
-						#End
+						#Tuong ngan cach hai o thang may
+						#end 
+						#Cua cua thang may
+			#Begin
+			Transform {
+				translation	1.13 -1.73 -0.8  
+				children [
+					DEF cuathangmay Transform {
+							translation	0 0 0
+							children [
+								#Canh cua 1
+								#bengin
+								DEF cua1 Transform {
+									translation	0.2505 1.185 0.53
+									children [
+										Shape {
+											geometry Box {
+												size 0.5 2.4 0.02
+											}
+											appearance Appearance {
+												material Material {
+													diffuseColor .38 .35 .35
+													specularColor .76 .74 .59
+													ambientIntensity .0933
+													shininess .07
+														}
+						
+											}
+											}
+									]
+								}
+								#Canh cua 1
+								#End
 
+								#Canh cua 2
+								#Begin
+								DEF cua2 Transform {
+									translation	-0.2505 1.185 0.53
+									children [
+										Shape {
+											geometry Box {
+												size 0.5 2.4 0.02
+											}
+											appearance Appearance {
+												material Material {
+												diffuseColor .38 .35 .35
+												specularColor .76 .74 .59
+												ambientIntensity .0933
+												shininess .07
+											}
+						
+											}
+										}
+									]
+							   }
+							   #Canh cua 2
+							   #End
+								]
+							}
+										
+						]
+	
+					}
+				#Cua cua thang may
+				#End
 						#Tuong ben 1
 						#begin
 						Transform {
@@ -566,15 +1030,15 @@ Transform {
 						#Tuong ben 1
 						#end
 
-						#Thu nghiem thang may
+						#Cua thang may 2
 						#Begin
 						Transform {
 							translation	-1.13 -1.73 -0.8
 							children [
-								USE	hopthangmay
+								USE	cuathangmay
 							]
 						}
-						#Thu nghiem thang may
+						#Cua thang may 2
 						#End
 		
 						#San tuong 1
@@ -715,7 +1179,7 @@ Transform {
 						#Tuong mat ben 1
 						#End
 
-						#Tuong mat ben 1
+						#Tuong mat ben 2
 						#Begin
 						Transform {
 							translation	2.2 0 -0.8
@@ -736,7 +1200,7 @@ Transform {
 							]
 
 						}
-						#Tuong mat ben 1
+						#Tuong mat ben 2
 						#End
 
 						#Bang dieu khien 1
@@ -867,12 +1331,27 @@ Transform {
 						#Bang dieu khien 1
 						#Begin
 					]
-				}
+				}	
 				#Tang 2
 				#Begin
 				Transform {
-					translation	0 3.5 0
+					translation	0 4.3 0.25
 					children [
+						Shape {
+							geometry Box {
+							size 0.4 0.15 0.01
+							}
+							appearance Appearance {
+								texture	ImageTexture {
+									url	["Img/two.png"]
+								}
+							}
+						}
+					]
+						}
+				Transform {
+					translation	0 3.5 0
+					children [ 
 						USE	thangmay
 					]
 				}
@@ -881,6 +1360,22 @@ Transform {
 
 				#Tang 3
 			    #Begin 
+				Transform {
+					translation	0 7.9 0.25
+					children [
+						Shape {
+							geometry Box {
+							size 0.4 0.15 0.01
+							}
+							appearance Appearance {
+								texture	ImageTexture {
+									url	["Img/three.png"]
+								}
+							}
+						}
+					]
+				}
+
 				Transform {
 					translation	0 7 0
 					children [
@@ -893,6 +1388,22 @@ Transform {
 				#Tang 4
 				#Begin
 				Transform {
+					translation	0 11.4 0.25
+					children [
+						Shape {
+							geometry Box {
+							size 0.4 0.15 0.01
+							}
+							appearance Appearance {
+								texture	ImageTexture {
+									url	["Img/four.png"]
+								}
+							}
+						}
+					]
+				}
+
+				Transform {
 					translation	0 10.5 0
 					children [
 						USE	thangmay
@@ -903,6 +1414,23 @@ Transform {
 
 				#Tang 5
 				#Begin
+
+				Transform {
+					translation	0 15 0.25
+					children [
+						Shape {
+							geometry Box {
+							size 0.4 0.15 0.01
+							}
+							appearance Appearance {
+								texture	ImageTexture {
+									url	["Img/five.png"]
+								}
+							}
+						}
+					]
+				}
+
 				Transform {
 					translation	0 14 0
 					children [
@@ -915,6 +1443,22 @@ Transform {
 				#Tang 6 
 				#Begin
 				Transform {
+					translation	0 18.3 0.25
+					children [
+						Shape {
+							geometry Box {
+							size 0.4 0.15 0.01
+							}
+							appearance Appearance {
+								texture	ImageTexture {
+									url	["Img/six.png"]
+								}
+							}
+						}
+					]
+				}
+
+				Transform {
 					translation	0 17.5 0
 					children [
 						USE	thangmay
@@ -925,6 +1469,22 @@ Transform {
 
 				#Tang 7
 				#Begin
+				Transform {
+					translation	0 22 0.25
+					children [
+						Shape {
+							geometry Box {
+							size 0.4 0.15 0.01
+							}
+							appearance Appearance {
+								texture	ImageTexture {
+									url	["Img/seven.png"]
+								}
+							}
+						}
+					]
+				}
+
 				Transform {
 					translation	0 21 0
 					children [
@@ -937,6 +1497,22 @@ Transform {
 				#Tang 8
 				#Begin
 				Transform {
+					translation	0 25.5 0.25
+					children [
+						Shape {
+							geometry Box {
+							size 0.4 0.15 0.01
+							}
+							appearance Appearance {
+								texture	ImageTexture {
+									url	["Img/seven.png"]
+								}
+							}
+						}
+					]
+				}
+
+				Transform {
 					translation	0 24.5 0
 					children [
 						USE	thangmay
@@ -947,14 +1523,15 @@ Transform {
 
 				#Tang 9
 				#Begin
-				Transform {
-					translation	0 28 0
-					children [
-						USE	thangmay
-					]
-				}
+				#Transform {
+					#translation	0 28 0
+					#children [
+						#USE	thangmay
+					#]
+				#}
 				#Tang 9
-				#End
+				#End 
+				
 	]
 }
 		
@@ -1038,4 +1615,151 @@ ROUTE thang1down.touchTime TO timesOpen.startTime
 ROUTE thang2up.touchTime  TO timesOpen.startTime
 ROUTE thang2down.touchTime TO timesOpen.startTime
 #Xu ly thang may
-#End								
+#End					
+
+#Di chuyen cac tang thang may 1
+#Begin
+DEF	timesMove1 TimeSensor {
+	cycleInterval 0.1
+	loop FALSE
+	startTime -1
+	stopTime 0
+}
+
+DEF	timesMove2 TimeSensor {
+	cycleInterval 0.1
+	loop FALSE
+	startTime -1
+	stopTime 0
+}
+
+DEF	timesMove3 TimeSensor {
+	cycleInterval 0.1
+	loop FALSE
+	startTime -1
+	stopTime 0
+}
+DEF	timesMove4 TimeSensor {
+	cycleInterval 0.1
+	loop FALSE
+	startTime -1
+	stopTime 0
+}
+DEF	timesMove5 TimeSensor {
+	cycleInterval 0.1
+	loop FALSE
+	startTime -1
+	stopTime 0
+}
+DEF	timesMove6 TimeSensor {
+	cycleInterval 0.1
+	loop FALSE
+	startTime -1
+	stopTime 0
+}
+DEF	timesMove7 TimeSensor {
+	cycleInterval 0.1
+	loop FALSE
+	startTime -1
+	stopTime 0
+}
+DEF	timesMove8 TimeSensor {
+	cycleInterval 0.1
+	loop FALSE
+	startTime -1
+	stopTime 0
+}
+DEF	timesMove9 TimeSensor {
+	cycleInterval 0.1
+	loop FALSE
+	startTime -1
+	stopTime 0
+}
+
+DEF	move1_1 PositionInterpolator {
+	key	[0 1]
+	keyValue [0 0 0, 0 0 0]
+}
+
+DEF	move1_2 PositionInterpolator {
+	key	[0 1]
+	keyValue [0 3.5 0, 0 3.5 0]
+}
+
+DEF	move1_3 PositionInterpolator {
+	key	[0 1]
+	keyValue [0 7 0, 0 7 0]
+}
+
+DEF	move1_4 PositionInterpolator {
+	key	[0 1]
+	keyValue [0 10.5 0, 0 10.5 0]
+}
+
+DEF	move1_5 PositionInterpolator {
+	key	[0 1]
+	keyValue [0 14 0, 0 14 0]
+}
+
+DEF	move1_6 PositionInterpolator {
+	key	[0 1]
+	keyValue [0 17.5 0, 0 17.5 0]
+}
+
+DEF	move1_7 PositionInterpolator {
+	key	[0 1]
+	keyValue [0 21 0, 0 21 0]
+}
+
+DEF	move1_8 PositionInterpolator {
+	key	[0 1]
+	keyValue [0 24.5 0, 0 24.5 0]
+}
+
+DEF	move1_9 PositionInterpolator {
+	key	[0 1]
+	keyValue [0 28 0, 0 28 0]
+}
+
+#Thang may 1
+#Begin
+ROUTE timesMove1.fraction_changed TO	move1_1.set_fraction
+ROUTE button1.touchTime	TO timesMove1.startTime
+ROUTE move1_1.value_changed	TO hopthangmay1.translation
+
+ROUTE timesMove2.fraction_changed TO	move1_2.set_fraction
+ROUTE button2.touchTime	TO timesMove2.startTime
+ROUTE move1_2.value_changed	TO hopthangmay1.translation
+
+ROUTE timesMove3.fraction_changed TO	move1_3.set_fraction
+ROUTE button3.touchTime	TO timesMove3.startTime
+ROUTE move1_3.value_changed	TO hopthangmay1.translation
+
+ROUTE timesMove4.fraction_changed TO	move1_4.set_fraction
+ROUTE button4.touchTime	TO timesMove4.startTime
+ROUTE move1_4.value_changed	TO hopthangmay1.translation
+
+ROUTE timesMove5.fraction_changed TO	move1_5.set_fraction
+ROUTE button5.touchTime	TO timesMove5.startTime
+ROUTE move1_5.value_changed	TO hopthangmay1.translation
+
+ROUTE timesMove6.fraction_changed TO	move1_6.set_fraction
+ROUTE button6.touchTime	TO timesMove6.startTime
+ROUTE move1_6.value_changed	TO hopthangmay1.translation
+
+ROUTE timesMove7.fraction_changed TO	move1_7.set_fraction
+ROUTE button7.touchTime	TO timesMove7.startTime
+ROUTE move1_7.value_changed	TO hopthangmay1.translation
+
+ROUTE timesMove8.fraction_changed TO	move1_8.set_fraction
+ROUTE button8.touchTime	TO timesMove8.startTime
+ROUTE move1_8.value_changed	TO hopthangmay1.translation
+
+ROUTE timesMove9.fraction_changed TO	move1_9.set_fraction
+ROUTE button9.touchTime	TO timesMove9.startTime
+ROUTE move1_9.value_changed	TO hopthangmay1.translation
+#Thang may 1
+#End
+
+#Di chuyen cac tang thang may 2
+#End			

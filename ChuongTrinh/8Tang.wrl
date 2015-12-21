@@ -116,10 +116,24 @@ Transform
 Transform
 {
 	rotation 0 1 0 1.57
-	translation	15.3 -1.7 -3.7
+	translation	15.3 1.77 -3.7
 	children Inline
 	{
 		url	"thangmay.wrl"
 	}
 }
 
+#nen dat
+Transform
+{
+	children Shape
+	{
+		geometry Box {size 150 0.05 150}
+	}
+}
+Background {
+    skyAngle	[ 0.075, 0.1, 0.2, 1.309, 1.5708 ]
+    skyColor	[ 1 1 0, .9 .9 .5, .7 .7 .9, 0 0.4 1, 0 0.7 1, 1 1 1 ]
+    groundAngle [ 0.75, 1.4, 1.5, 1.5708 ]
+    groundColor [ .16 .5 0, .16 .5 0, .36 .7 .2, .46 .8 .3, .66 1 .5 ]
+}

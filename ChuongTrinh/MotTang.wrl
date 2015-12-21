@@ -413,11 +413,105 @@ Transform
 #cau thang gan voi thang may ben phai
 Transform
 {
-	scale 1 0.5 1
+	scale 1.15 0.5 1
 	rotation  0 1 0 1.57
-	translation	18 0 -8
+	translation	18.15 0.2 -7.6
 	children Inline
 	{
 		url	"cauthangbo.wrl"
+	}
+}
+
+#nen cauthan
+Transform
+{
+	translation	18 0.15 -5
+	children Shape
+	{
+		geometry Box {size 5 0.1 8}
+		appearance Appearance
+		{
+			texture	ImageTexture
+			{
+				url	"./Images/GachLatNha.jpg"
+			}
+			textureTransform TextureTransform
+			{
+				scale  16 26
+			}
+		}
+	}
+}
+
+#khu cau thang thu 2
+Transform
+{
+	scale 1.15 0.5 1
+	rotation  0 1 0 -1.57
+	translation	-20.55 0.2 -7.6
+	children Inline
+	{
+		url	"cauthang.wrl"
+	}
+}
+
+Transform
+{
+	translation	-19.3 0.15 -5
+	children Shape
+	{
+		geometry Box {size 6.5 0.1 8}
+		appearance Appearance
+		{
+			texture	ImageTexture
+			{
+				url	"./Images/GachLatNha.jpg"
+			}
+			textureTransform TextureTransform
+			{
+				scale  23 26
+			}
+		}
+
+	}
+}
+
+Transform
+{
+	translation	-21.6 0.16 -10
+	children Shape
+	{
+		geometry Box {size 2 0.1 2}
+		appearance Appearance
+		{
+			texture	ImageTexture
+			{
+				url	"./Images/GachLatNha.jpg"
+			}
+			textureTransform TextureTransform
+			{
+				scale  6 6
+			}
+		}
+	}
+}
+
+Transform
+{
+	translation	19.4 0.16 -10
+	children Shape
+	{
+		geometry Box {size 2 0.1 2}
+		appearance Appearance
+		{
+			texture	ImageTexture
+			{
+				url	"./Images/GachLatNha.jpg"
+			}
+			textureTransform TextureTransform
+			{
+				scale  6 6
+			}
+		}
 	}
 }
